@@ -5,6 +5,8 @@ import Header from "./components/Header";
 import { chopsin, anantason, sukhumvit_medium, sukhumvit_text } from "./fonts";
 import "./page.css";
 import { styled } from "styled-components";
+import Synopsis from "./components/Synopsis";
+import Subtitle from "./components/Subtitle";
 
 const Homepage = styled.html`
   background-image: radial-gradient(
@@ -19,8 +21,10 @@ const Homepage = styled.html`
 export default function Home() {
   return (
     <Homepage>
-      <SwitchButton></SwitchButton>
-      <Header></Header>
+      <SwitchButton />
+      <Header />
+      <Subtitle />
+      <Synopsis />
     </Homepage>
   );
 }
