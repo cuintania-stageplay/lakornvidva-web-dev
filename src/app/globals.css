@@ -23,3 +23,12 @@ body {
     color: rgb(var(--foreground-rgb));
     background: rgb(var(--background-end-rgb));
 }
+
+.html {
+    background-image: radial-gradient(
+            rgba(17, 16, 11, 0.75) 5%,
+            rgba(17, 16, 11, 1) 50%
+        ),
+        url(https://grainy-gradients.vercel.app/noise.svg);
+    height: auto;
+}
