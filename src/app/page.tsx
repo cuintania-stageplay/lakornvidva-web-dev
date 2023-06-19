@@ -9,6 +9,7 @@ import Header from "./components/Header";
 import Synopsis from "./components/Synopsis";
 import Subtitle from "./components/Subtitle";
 import BuyButton from "./components/BuyButton";
+import SocialMedia from "./components/SocialMedia";
 
 const Homepage = styled.html`
   background-image: radial-gradient(
@@ -35,6 +36,7 @@ export default function Home() {
         <Subtitle />
         <Synopsis />
         <BuyButton />
+        <SocialMedia />
       </Body>
     </Homepage>
   );
