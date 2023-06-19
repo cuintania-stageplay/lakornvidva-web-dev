@@ -13,15 +13,15 @@ const TitleEng = styled.div`
 
   background: conic-gradient(
     from 180deg at 50% 50%,
-    #00e225 -17.9deg,
-    var(--bright-red) 22.33deg,
-    #ba3345 48.02deg,
-    #c22d61 135deg,
-    #47206d 163.09deg,
-    #358faf 255deg,
-    #66b234 318.11deg,
-    #00e225 342.1deg,
-    #e93224 382.33deg
+    #00e225 -20deg,
+    var(--bright-red) 75deg,
+    #ba3345 85deg,
+    #c22d61 95deg,
+    #47206d 120deg,
+    #47206d 260deg,
+    #358faf 268deg,
+    #66b234 275deg,
+    #00e225 300deg
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -29,6 +29,7 @@ const TitleEng = styled.div`
   text-fill-color: transparent;
   background-blend-mode: lighten;
   mix-blend-mode: normal;
+
   text-border: 1px solid #846e6e;
   text-shadow: 0px 4px 30px rgba(255, 254, 254, 0.2);
 `;
@@ -50,14 +51,14 @@ const TitleTh = styled.div`
 
   background: conic-gradient(
     from 180deg at 50% 50%,
-    #00e225 -7.5deg,
-    #66b234 34.06deg,
+    #00e225 -15deg,
+    #66b234 75deg,
     #358faf 93.07deg,
-    #47206d 144.93deg,
+    #47206d 120deg,
     #c22d61 201.4deg,
     #ba3345 256.21deg,
-    #e93224 311.63deg,
-    #00e225 352.5deg,
+    #e93224 280deg,
+    #00e225 320deg,
     #66b234 394.06deg
   );
   -webkit-background-clip: text;
