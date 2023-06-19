@@ -1,11 +1,13 @@
 import { styled } from "styled-components";
-import { sukhumvit_text } from "../fonts";
+import { sukhumvit_medium } from "../fonts";
 
 const SynopsisStyle = styled.div`
-  font-family: ${sukhumvit_text.style.fontFamily};
+  font-family: ${sukhumvit_medium.style.fontFamily};
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
+
+  padding: 160px;
 
   text-align: center;
 
@@ -14,6 +16,9 @@ const SynopsisStyle = styled.div`
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+
+  -webkit-text-stroke-color: #000000;
+  -webkit-text-stroke-width: 0.5px;
 `;
 
 export default function Synopsis() {

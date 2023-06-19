@@ -5,6 +5,8 @@ const SectionLine = styled.div`
   width: 1029px;
   height: 2px;
 
+  margin-top: 50px;
+
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0.131823) 0%,
@@ -18,6 +20,7 @@ const SponsorName = styled.div`
   width: 1029px;
 
   padding-top: 20px;
+  padding-bottom: 100px;
   font-family: "Cordia New";
   font-style: normal;
   font-weight: 400;
