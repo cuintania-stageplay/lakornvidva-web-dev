@@ -1,12 +1,14 @@
 "use client";
 // pre-loaded custom fonts
-import SwitchButton from "./components/SwitchButton";
-import Header from "./components/Header";
 import { chopsin, anantason, sukhumvit_medium, sukhumvit_text } from "./fonts";
 import "./page.css";
 import { styled } from "styled-components";
+
+import SwitchButton from "./components/SwitchButton";
+import Header from "./components/Header";
 import Synopsis from "./components/Synopsis";
 import Subtitle from "./components/Subtitle";
+import BuyButton from "./components/BuyButton";
 
 const Homepage = styled.html`
   background-image: radial-gradient(
@@ -18,13 +20,22 @@ const Homepage = styled.html`
   height: 100%;
 `;
 
+const Body = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
 export default function Home() {
   return (
     <Homepage>
       <SwitchButton />
-      <Header />
-      <Subtitle />
-      <Synopsis />
+      <Body>
+        <Header />
+        <Subtitle />
+        <Synopsis />
+        <BuyButton />
+      </Body>
     </Homepage>
   );
 }
