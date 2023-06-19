@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { sukhumvit_medium } from "../fonts";
+import { quote } from "../text/Text";
 
 const Quote = styled.div`
   font-family: ${sukhumvit_medium.style.fontFamily};
@@ -25,8 +26,6 @@ const Quote = styled.div`
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `;
 
-export default function Subtitle() {
-  return (
-    <Quote>‘เรื่องราวมันเริ่มเมื่อตอนที่พบเครื่องมือเอเลี่ยนประหลาด’</Quote>
-  );
+export default function Subtitle(state: { language: string }) {
+  return <Quote>{quote.get(state.language)}</Quote>;
 }

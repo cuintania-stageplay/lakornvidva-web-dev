@@ -97,10 +97,24 @@ const BoxInput = styled.input`
   }
 `;
 
-export default function SwitchButton() {
+function switchLanguage(state: {
+  language: string;
+  setLanguage: React.Dispatch<React.SetStateAction<string>>;
+}) {
+  if (state.language == "TH") state.setLanguage("ENG");
+  else state.setLanguage("TH");
+}
+
+export default function SwitchButton(state: {
+  language: string;
+  setLanguage: React.Dispatch<React.SetStateAction<string>>;
+}) {
   return (
     <Box>
-      <BoxInput type="checkbox"></BoxInput>
+      <BoxInput
+        onClick={() => switchLanguage(state)}
+        type="checkbox"
+      ></BoxInput>
       <Slider></Slider>
       <Language data-th="TH" data-eng="ENG"></Language>
     </Box>

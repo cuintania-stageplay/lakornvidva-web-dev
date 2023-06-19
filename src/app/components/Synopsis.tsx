@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import { sukhumvit_medium } from "../fonts";
+import { synopsis } from "../text/Text";
 
 const SynopsisStyle = styled.div`
   font-family: ${sukhumvit_medium.style.fontFamily};
@@ -21,14 +22,6 @@ const SynopsisStyle = styled.div`
   -webkit-text-stroke-width: 0.5px;
 `;
 
-export default function Synopsis() {
-  return (
-    <SynopsisStyle>
-      กาลครั้งหนึ่ง ณ หมู่บ้านที่แสนอบอุ่น
-      <br />
-      มีเด็กหญิงหน้าตาน่ารักนั่งเล่นดูคุณแม่ทำอาหารอยู่ในครัว
-      <br />
-      เพื่อนบ้านทุกคนต่างพากันเรียกเธอว่า หนูน้อยหมวกแดง
-    </SynopsisStyle>
-  );
+export default function Synopsis(state: { language: string }) {
+  return <SynopsisStyle>{synopsis.get(state.language)}</SynopsisStyle>;
 }

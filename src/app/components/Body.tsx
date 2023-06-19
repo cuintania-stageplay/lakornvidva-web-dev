@@ -13,12 +13,12 @@ const BodyStyle = styled.div`
   align-items: center;
 `;
 
-export default function Body() {
+export default function Body(state: { language: string }) {
   return (
     <BodyStyle>
       <Header />
-      <Subtitle />
-      <Synopsis />
+      <Subtitle language={state.language} />
+      <Synopsis language={state.language} />
       <BuyButton />
       <SocialMedia />
       <Sponsor />
