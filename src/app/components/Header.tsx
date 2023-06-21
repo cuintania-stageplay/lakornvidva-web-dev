@@ -5,11 +5,11 @@ import { chopsin, sukhumvit_medium, sukhumvit_text } from "../fonts";
 
 const TitleEng = styled.div`
   font-family: ${chopsin.style.fontFamily};
-  font-size: 120px;
+  font-size: max(30px, 6.25vw);
   font-weight: 400;
   text-align: center;
 
-  margin-top: -180px;
+  margin-top: -9.5vw;
 
   background: conic-gradient(
     from 180deg at 50% 50%,
@@ -42,12 +42,12 @@ const TitleEngShadow = styled(TitleEng)`
 
 const TitleTh = styled.div`
   font-family: ${sukhumvit_text.style.fontFamily};
-  font-size: 128px;
+  font-size: max(30px, 6.7vw);
   font-weight: 400;
 
   text-align: center;
 
-  margin-top: -50px;
+  margin-top: -2.64vw;
 
   background: conic-gradient(
     from 180deg at 50% 50%,

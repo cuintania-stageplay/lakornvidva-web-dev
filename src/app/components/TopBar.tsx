@@ -6,10 +6,15 @@ import Logo from "../images/logo-white.png";
 import SwitchButton from "./SwitchButton";
 
 const Bar = styled.div`
-  padding: 25px;
+  padding: 2.5vw;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
+`;
+
+const Wrapper = styled.div`
+  height: max(75px, 7.8vw);
+  width: max(75px, 7.8vw);
 `;
 
 export default function TopBar(state: {
@@ -18,8 +23,15 @@ export default function TopBar(state: {
 }) {
   return (
     <Bar>
-      <SwitchButton language={state.language} setLanguage={state.setLanguage} />
-      <Image src={Logo.src} width={150} height={150} alt="LAKORNVIDVA" />
+      <Wrapper>
+        <Image
+          layout="responsive"
+          src={Logo.src}
+          width={150}
+          height={150}
+          alt="LAKORNVIDVA"
+        />
+      </Wrapper>
     </Bar>
   );
 }

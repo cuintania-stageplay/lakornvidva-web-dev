@@ -21,7 +21,6 @@ export default function Body(state: { language: string }) {
       <Synopsis language={state.language} />
       <BuyButton />
       <SocialMedia />
-      <Sponsor />
     </BodyStyle>
   );
 }

@@ -7,27 +7,30 @@ const SynopsisStyle = styled.div`
   font-family: ${sukhumvit_medium.style.fontFamily};
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
+  font-size: max(12px, 2.23vw);
 
-  width: 1400px;
+  width: 73vw;
 
-  padding: 160px;
-  padding-bottom: 20px;
+  padding: 8.33vw 1vw 1vh 1vw;
 
   text-align: center;
 
-  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
 
   -webkit-text-stroke-color: #000000;
-  -webkit-text-stroke-width: 0.75px;
+  -webkit-text-stroke-width: 0.04vw;
 `;
 
 const SynopsisBox = styled.div`
-  min-height: 1100px;
+  min-height: 50vw;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -38,12 +41,12 @@ const Seemore = styled.button`
   font-family: ${sukhumvit_medium.style.fontFamily};
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 2.23vw;
   color: rgba(255, 255, 255, 0.25);
 
   text-align: right;
 
-  width: 1400px;
+  width: 73vw;
 
   text-decoration-line: underline;
   text-decoration-color: rgba(255, 255, 255, 0.25);

@@ -5,16 +5,18 @@ import tiktokIcon from "../images/tiktok_icon.png";
 import { styled } from "styled-components";
 
 const IconBox = styled.div`
-  width: 420px;
+  width: max(200px, 21.2vw);
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 `;
 
 const IconStyle = styled.a`
+  width: max(6.5vw, 55px);
   border-width: 6px;
   border-radius: 50%;
+  border-color: transparent;
 
   &:hover {
     border-color: ${(props) => props.color};

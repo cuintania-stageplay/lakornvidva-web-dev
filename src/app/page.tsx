@@ -9,6 +9,7 @@ import TopBar from "./components/TopBar";
 import Noise from "./images/noise.png";
 import Partical from "./images/particle.png";
 import Gradient from "./images/gradient.png";
+import Sponsor from "./components/Sponsor";
 
 const Homepage = styled.div`
   background-image: url(${Noise.src}), url(${Gradient.src}),
@@ -22,6 +23,11 @@ const Homepage = styled.div`
   background-blend-mode: normal, overlay, normal;
   background-repeat: no-repeat;
   backdrop-filter: brightness(60%), normal, overlay;
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
 `;
 
 export default function Home() {
@@ -30,6 +36,7 @@ export default function Home() {
     <Homepage>
       <TopBar language={language} setLanguage={setLanguage} />
       <Body language={language} />
+      <Sponsor />
     </Homepage>
   );
 }

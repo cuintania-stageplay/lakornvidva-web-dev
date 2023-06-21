@@ -13,16 +13,16 @@ const FullButton = styled.div`
 
 const Button = styled.button`
   background: #d9d9d9;
-  width: 470px;
-  height: 140px;
-  border-radius: 70px;
+  width: max(200px, 24.5vw);
+  height: max(59px, 7.3vw);
+  border-radius: max(29.5px, 3.65vw);
 
   font-family: ${chopsin.style.fontFamily};
-  font-size: 40px;
+  font-size: max(20px, 2.23vw);
 
   color: #000000;
 
-  padding-right: 50px;
+  padding-right: 2.6vw;
 
   display: flex;
   flex-direction: row;
@@ -31,20 +31,20 @@ const Button = styled.button`
 `;
 
 const TicketBg = styled.div`
-  width: 95px;
-  height: 95px;
+  width: max(40px, 4.94vw);
+  height: max(40px, 4.94vw);
 
-  padding: 13.5px;
+  padding: max(6px, 0.703vw);
 
   background: #ffffff;
-  background-size: 95px;
   border-radius: 50%;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 `;
 
 const Cursor = styled.div`
-  margin-top: -55px;
-  margin-left: 450px;
+  width: max(50px, 6.66vw);
+  margin-top: min(-20px, -2.86vw);
+  margin-left: max(191.3px, 23.4375vw);
 `;
 
 export default function BuyButton() {
@@ -62,7 +62,13 @@ export default function BuyButton() {
         BUY NOW
       </Button>
       <Cursor>
-        <Image src={cursor.src} width={128} height={128} alt="Click here" />
+        <Image
+          layout="responsive"
+          src={cursor.src}
+          width={128}
+          height={128}
+          alt="Click here"
+        />
       </Cursor>
     </FullButton>
   );
