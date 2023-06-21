@@ -26,6 +26,14 @@ const SynopsisStyle = styled.div`
   -webkit-text-stroke-width: 0.75px;
 `;
 
+const SynopsisBox = styled.div`
+  min-height: 1100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+`;
+
 const Seemore = styled.button`
   font-family: ${sukhumvit_medium.style.fontFamily};
   font-style: normal;
@@ -44,7 +52,7 @@ const Seemore = styled.button`
 export default function Synopsis(state: { language: string }) {
   const [isSeemore, setIsSeemore] = useState(true);
   return (
-    <>
+    <SynopsisBox>
       <SynopsisStyle>
         {isSeemore
           ? synopsis.get(state.language)?.substring(0, 194)
@@ -57,6 +65,6 @@ export default function Synopsis(state: { language: string }) {
       >
         {isSeemore ? "See more" : "Show less"}
       </Seemore>
-    </>
+    </SynopsisBox>
   );
 }
