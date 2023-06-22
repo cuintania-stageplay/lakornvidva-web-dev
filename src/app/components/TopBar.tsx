@@ -13,8 +13,8 @@ const Bar = styled.div`
 `;
 
 const Wrapper = styled.div`
-  height: max(75px, 7.8vw);
-  width: max(75px, 7.8vw);
+  height: max(50px, 7.8vw);
+  width: max(50px, 7.8vw);
 `;
 
 export default function TopBar(state: {
