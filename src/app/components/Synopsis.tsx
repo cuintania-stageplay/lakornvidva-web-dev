@@ -3,13 +3,19 @@ import { sukhumvit_medium } from "../fonts";
 import { synopsis } from "../text/Text";
 import { useState } from "react";
 
-const SynopsisStyle = styled.div`
+const SynopsisStyle = styled.div<{ isSeeMore?: boolean }>`
   font-family: ${sukhumvit_medium.style.fontFamily};
   font-style: normal;
   font-weight: 400;
   font-size: max(12px, 2.23vw);
 
   width: 73vw;
+
+  line-height: 3;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: ${(props) => (props.isSeeMore ? "3" : "none")};
+  -webkit-box-orient: vertical;
 
   padding: 8.33vw 1vw 1vh 1vw;
 
@@ -30,7 +36,7 @@ const SynopsisStyle = styled.div`
 `;
 
 const SynopsisBox = styled.div`
-  min-height: 50vw;
+  /*min-height: 50vw;*/
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -41,8 +47,8 @@ const Seemore = styled.button`
   font-family: ${sukhumvit_medium.style.fontFamily};
   font-style: normal;
   font-weight: 400;
-  font-size: 2.23vw;
-  color: rgba(255, 255, 255, 0.25);
+  font-size: max(12px, 2.23vw);
+  color: rgba(255, 255, 255, 0.5);
 
   text-align: right;
 
@@ -56,10 +62,8 @@ export default function Synopsis(state: { language: string }) {
   const [isSeemore, setIsSeemore] = useState(true);
   return (
     <SynopsisBox>
-      <SynopsisStyle>
-        {isSeemore
-          ? synopsis.get(state.language)?.substring(0, 194)
-          : synopsis.get(state.language)}
+      <SynopsisStyle isSeeMore={isSeemore}>
+        {synopsis.get(state.language)}
       </SynopsisStyle>
       <Seemore
         onClick={() => {
