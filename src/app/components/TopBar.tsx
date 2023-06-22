@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import Logo from "../images/logo-white.png";
 import SwitchButton from "./SwitchButton";
+import Header from "./Header";
 
 const Bar = styled.div`
   padding: 2.5vw;
@@ -22,16 +23,19 @@ export default function TopBar(state: {
   setLanguage: React.Dispatch<React.SetStateAction<string>>;
 }) {
   return (
-    <Bar>
-      <Wrapper>
-        <Image
-          layout="responsive"
-          src={Logo.src}
-          width={150}
-          height={150}
-          alt="LAKORNVIDVA"
-        />
-      </Wrapper>
-    </Bar>
+    <>
+      <Bar>
+        <Wrapper>
+          <Image
+            layout="responsive"
+            src={Logo.src}
+            width={150}
+            height={150}
+            alt="LAKORNVIDVA"
+          />
+        </Wrapper>
+      </Bar>
+      <Header />
+    </>
   );
 }

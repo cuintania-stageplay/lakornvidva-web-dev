@@ -11,12 +11,12 @@ const BodyStyle = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 `;
 
 export default function Body(state: { language: string }) {
   return (
     <BodyStyle>
-      <Header />
       <Subtitle language={state.language} />
       <Synopsis language={state.language} />
       <BuyButton />

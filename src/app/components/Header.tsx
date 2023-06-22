@@ -5,7 +5,7 @@ import { chopsin, sukhumvit_medium, sukhumvit_text } from "../fonts";
 
 const TitleEng = styled.div`
   font-family: ${chopsin.style.fontFamily};
-  font-size: max(30px, 6.25vw);
+  font-size: max(22px, 6.25vw);
   font-weight: 400;
   text-align: center;
 
@@ -42,12 +42,12 @@ const TitleEngShadow = styled(TitleEng)`
 
 const TitleTh = styled.div`
   font-family: ${sukhumvit_text.style.fontFamily};
-  font-size: max(30px, 6.7vw);
+  font-size: max(20px, 6.25vw);
   font-weight: 400;
 
   text-align: center;
 
-  margin-top: -2.64vw;
+  margin-top: -2.5vw;
 
   background: conic-gradient(
     from 180deg at 50% 50%,
@@ -76,9 +76,9 @@ const TitleTh = styled.div`
 export default function Header() {
   return (
     <div>
-      <TitleEngShadow>LAKORNVIDVA</TitleEngShadow>
-      <TitleEng>LAKORNVIDVA</TitleEng>
-      <TitleTh>ละครวิดวะ</TitleTh>
+      <TitleEngShadow>THE NEVERLASTING</TitleEngShadow>
+      <TitleEng>THE NEVERLASTING</TitleEng>
+      <TitleTh>ประตูนิมิต ชีวิตนิรันดร์</TitleTh>
     </div>
   );
 }

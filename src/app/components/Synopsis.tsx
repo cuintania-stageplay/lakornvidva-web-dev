@@ -41,6 +41,8 @@ const SynopsisBox = styled.div`
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+
+  padding-bottom: max(25px, 15vw);
 `;
 
 const Seemore = styled.button`
