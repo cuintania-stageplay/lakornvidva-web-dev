@@ -28,6 +28,12 @@ const Button = styled.button`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  &:hover {
+    background: #D9D9D9;
+    width: max(212px, 25.9vw);
+    height: max(65px, 8vw);
+    border-radius: max(32.5px, 4vw);
+  }
 `;
 
 const TicketBg = styled.div`

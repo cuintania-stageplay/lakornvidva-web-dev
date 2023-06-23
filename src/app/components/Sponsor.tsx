@@ -37,15 +37,8 @@ const SponsorName = styled.div`
 
 const Wrapper = styled.div`
   width: max(50px, 6.5vw);
-  /*background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.1) 0%,
-    #ffffff 42.14%,
-    #ffffff 56.21%,
-    rgba(255, 255, 255, 0.1) 100%
-  );*/
-
-  filter: drop-shadow(2px 2px 5px white);
+  mix-blend-mode: normal;
+  filter: drop-shadow(0px 0px 6px #FFFFFF);
 `;
 
 const SponsorStyle = styled.div`
