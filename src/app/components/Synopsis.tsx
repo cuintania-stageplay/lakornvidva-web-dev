@@ -42,7 +42,7 @@ const SynopsisBig = styled(SynopsisStyle)`
 `;
 
 const SynopsisSmall = styled(SynopsisStyle)`
-  @media screen and (min-width: 609px) {
+  @media screen and (min-width: 610px) {
     display: none;
   }
 `;
