@@ -26,22 +26,13 @@ const IconStyle = styled.a`
 export default function SocialMedia() {
   return (
     <IconBox>
-      <IconStyle
-        color="#00E225"
-        href="https://www.facebook.com/culakornvidva/?locale=hi_IN"
-      >
+      <IconStyle color="#00E225" href="https://www.facebook.com/culakornvidva">
         <Image src={facebookIcon.src} width={100} height={100} alt="FB" />
       </IconStyle>
-      <IconStyle
-        color="#358FAF"
-        href="https://www.instagram.com/lakornvidva/?fbclid=IwAR0vLYfwf-zvx3zeYrm2imllb3WnkPMNTx9T7J4p6pI1NTkA3TipODF_jYk"
-      >
+      <IconStyle color="#358FAF" href="https://www.instagram.com/lakornvidva/">
         <Image src={igIcon.src} width={100} height={100} alt="IG" />
       </IconStyle>
-      <IconStyle
-        color="#E93224"
-        href="https://www.facebook.com/culakornvidva/?locale=hi_IN"
-      >
+      <IconStyle color="#E93224" href="https://www.tiktok.com/@culakornvidva">
         <Image src={tiktokIcon.src} width={100} height={100} alt="Tiktok" />
       </IconStyle>
     </IconBox>
