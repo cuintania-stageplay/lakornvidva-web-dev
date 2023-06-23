@@ -53,7 +53,7 @@ export default function BuyButton() {
       <Button
         onClick={() =>
           (window.location.href =
-            "https://www.google.com/doodles/doodle-champion-island-games-begin")
+            "https://www.ticketmelon.com/lakornvidva/the-neverlasting")
         }
       >
         <TicketBg>
