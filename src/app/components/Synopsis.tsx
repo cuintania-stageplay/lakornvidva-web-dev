@@ -85,7 +85,7 @@ export default function Synopsis(state: { language: string }) {
           setIsSeemore(!isSeemore);
         }}
       >
-        {isSeemore ? "See more" : "Show less"}
+        {isSeemore ? "See more" : "See less"}
       </Seemore>
     </SynopsisBox>
   );
