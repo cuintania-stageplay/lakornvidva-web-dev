@@ -14,10 +14,20 @@ const BodyStyle = styled.div`
   justify-content: space-between;
 `;
 
+const BuyButtonStyle = styled.div`
+  padding-top: 3.5vw;
+  @media screen and (min-height: 70vw) {
+    display: none;
+  }
+`;
+
 export default function Body(state: { language: string }) {
   return (
     <BodyStyle>
       <Subtitle language={state.language} />
+      <BuyButtonStyle>
+        <BuyButton />
+      </BuyButtonStyle>
       <Synopsis language={state.language} />
       <BuyButton />
       <SocialMedia />
