@@ -15,10 +15,10 @@ const BodyStyle = styled.div`
 `;
 
 const BuyButtonStyle = styled.div`
-  padding-top: 3.5vw;
-  @media screen and (min-height: 70vw) {
+  padding-top: max(25px, 3.5vw);
+  /*@media screen and (min-height: 70vw) {
     display: none;
-  }
+  }*/
 `;
 
 export default function Body(state: { language: string }) {
@@ -28,8 +28,8 @@ export default function Body(state: { language: string }) {
       <BuyButtonStyle>
         <BuyButton />
       </BuyButtonStyle>
+
       <Synopsis language={state.language} />
-      <BuyButton />
       <SocialMedia />
     </BodyStyle>
   );
