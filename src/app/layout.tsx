@@ -1,9 +1,9 @@
 import "./globals.css";
 
 export const metadata = {
-    title: "LakornVidva's Official Website",
+    title: "LakornVidva - ละครวิดวะ",
     description:
-        "LakornVidva is a stage play created by Faculty of Engineering, Chulalongkorn University. We make the impossible, possible.",
+        "ละครเวทีของนิสิต วิศวฯ จุฬาฯ ที่จะพาคุณมาร่วมค้นหา 'หน้าตาความสำเร็จ' ของตัวเอง ผ่านเรื่องราวของหนทางไปสู่ประตูนิรันดร์ ประตูแห่งความสำเร็จในชีวิต",
 };
 
 export default function RootLayout({
