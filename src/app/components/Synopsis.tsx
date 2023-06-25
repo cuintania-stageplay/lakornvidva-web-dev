@@ -1,7 +1,7 @@
-import { styled } from "styled-components";
-import { sukhumvit_medium } from "../fonts";
-import { synopsis } from "../text/Text";
-import { useState } from "react";
+import { styled } from 'styled-components';
+import { sukhumvit_medium } from '../fonts';
+import { synopsis } from '../text/Text';
+import { useState } from 'react';
 
 const SynopsisStyle = styled.pre<{ isSeeMore?: boolean }>`
   font-family: ${sukhumvit_medium.style.fontFamily};
@@ -14,7 +14,7 @@ const SynopsisStyle = styled.pre<{ isSeeMore?: boolean }>`
   line-height: 2;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: ${(props) => (props.isSeeMore ? "3" : "none")};
+  -webkit-line-clamp: ${(props) => (props.isSeeMore ? '3' : 'none')};
   -webkit-box-orient: vertical;
 
   padding: 8.33vw 1vw 1vh 1vw;
@@ -74,18 +74,16 @@ export default function Synopsis() {
   const [isSeemore, setIsSeemore] = useState(true);
   return (
     <SynopsisBox>
-      <SynopsisBig isSeeMore={isSeemore}>
-        {synopsis["TH_Big"]}
-      </SynopsisBig>
+      <SynopsisBig isSeeMore={isSeemore}>{synopsis['TH_Big']}</SynopsisBig>
       <SynopsisSmall isSeeMore={isSeemore}>
-        {synopsis["TH_Small"]}
+        {synopsis['TH_Small']}
       </SynopsisSmall>
       <Seemore
         onClick={() => {
           setIsSeemore(!isSeemore);
         }}
       >
-        {isSeemore ? "See more" : "See less"}
+        {isSeemore ? 'See more' : 'See less'}
       </Seemore>
     </SynopsisBox>
   );

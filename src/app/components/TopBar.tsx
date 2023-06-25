@@ -1,10 +1,10 @@
-import React from "react";
-import { styled } from "styled-components";
-import Image from "next/image";
+import React from 'react';
+import { styled } from 'styled-components';
+import Image from 'next/image';
 
-import Logo from "../images/logo-white.png";
-import SwitchButton from "./SwitchButton";
-import Header from "./Header";
+import Logo from '../images/logo-white.png';
+import SwitchButton from './SwitchButton';
+import Header from './Header';
 
 const Bar = styled.div`
   padding: 2.5vw;
@@ -24,11 +24,11 @@ export default function TopBar() {
       <Bar>
         <Wrapper>
           <Image
-            layout="responsive"
+            layout='responsive'
             src={Logo.src}
             width={150}
             height={150}
-            alt="LAKORNVIDVA"
+            alt='LAKORNVIDVA'
           />
         </Wrapper>
       </Bar>

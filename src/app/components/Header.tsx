@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import styled from "styled-components";
-import { chopsin, sukhumvit_medium, sukhumvit_text } from "../fonts";
+import styled from 'styled-components';
+import { chopsin, sukhumvit_medium, sukhumvit_text } from '../fonts';
 
 const TitleEng = styled.div`
   font-family: ${chopsin.style.fontFamily};

@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import styled from "styled-components";
-import { chopsin, anantason, sukhumvit_medium, sukhumvit_text } from "../fonts";
+import styled from 'styled-components';
+import { chopsin, anantason, sukhumvit_medium, sukhumvit_text } from '../fonts';
 
 //box around circle
 const Box = styled.label`
@@ -28,7 +28,7 @@ const Slider = styled.span`
 
   &:before {
     position: absolute;
-    content: "";
+    content: '';
     height: 48px;
     width: 48px;
     left: 4px;
@@ -101,8 +101,8 @@ function switchLanguage(state: {
   language: string;
   setLanguage: React.Dispatch<React.SetStateAction<string>>;
 }) {
-  if (state.language == "TH") state.setLanguage("ENG");
-  else state.setLanguage("TH");
+  if (state.language == 'TH') state.setLanguage('ENG');
+  else state.setLanguage('TH');
 }
 
 export default function SwitchButton(state: {
@@ -113,10 +113,10 @@ export default function SwitchButton(state: {
     <Box>
       <BoxInput
         onClick={() => switchLanguage(state)}
-        type="checkbox"
+        type='checkbox'
       ></BoxInput>
       <Slider></Slider>
-      <Language data-th="TH" data-eng="ENG"></Language>
+      <Language data-th='TH' data-eng='ENG'></Language>
     </Box>
   );
 }

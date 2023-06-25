@@ -1,8 +1,8 @@
-import Image from "next/image";
-import { styled } from "styled-components";
-import { chopsin } from "../fonts";
-import ticketPic from "../images/ticket.png";
-import cursor from "../images/cursor.png";
+import Image from 'next/image';
+import { styled } from 'styled-components';
+import { chopsin } from '../fonts';
+import ticketPic from '../images/ticket.png';
+import cursor from '../images/cursor.png';
 
 const FullButton = styled.div`
   width: 100%;
@@ -29,7 +29,7 @@ const Button = styled.button`
   justify-content: space-around;
   align-items: center;
   &:hover {
-    background: #D9D9D9;
+    background: #d9d9d9;
     width: max(212px, 25.9vw);
     height: max(65px, 8vw);
     border-radius: max(32.5px, 4vw);
@@ -59,21 +59,21 @@ export default function BuyButton() {
       <Button
         onClick={() =>
           (window.location.href =
-            "https://www.ticketmelon.com/lakornvidva/the-neverlasting")
+            'https://www.ticketmelon.com/lakornvidva/the-neverlasting')
         }
       >
         <TicketBg>
-          <Image src={ticketPic.src} width={68} height={68} alt=">>" />
+          <Image src={ticketPic.src} width={68} height={68} alt='>>' />
         </TicketBg>
         BUY NOW
       </Button>
       <Cursor>
         <Image
-          layout="responsive"
+          layout='responsive'
           src={cursor.src}
           width={128}
           height={128}
-          alt="Click here"
+          alt='Click here'
         />
       </Cursor>
     </FullButton>

@@ -1,8 +1,8 @@
-import Image from "next/image";
-import { styled } from "styled-components";
-import { anantason, chopsin, sukhumvit_text } from "../fonts";
-import SponsorPic01 from "../images/GISC_Logo.png";
-import SponsorPic02 from "../images/CPALL_Logo.png";
+import Image from 'next/image';
+import { styled } from 'styled-components';
+import { anantason, chopsin, sukhumvit_text } from '../fonts';
+import SponsorPic01 from '../images/GISC_Logo.png';
+import SponsorPic02 from '../images/CPALL_Logo.png';
 
 const SectionLine = styled.div`
   width: 53.5vw;
@@ -23,7 +23,7 @@ const SponsorName = styled.div`
   width: 53.5vw;
   padding-top: 2vw;
   padding-bottom: 8vw;
-  font-family: "Cordia New";
+  font-family: 'Cordia New';
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -38,7 +38,7 @@ const SponsorName = styled.div`
 const Wrapper = styled.div`
   width: max(50px, 6.5vw);
   mix-blend-mode: normal;
-  filter: drop-shadow(0px 0px 6px #FFFFFF);
+  filter: drop-shadow(0px 0px 6px #ffffff);
 `;
 
 const SponsorStyle = styled.div`
@@ -58,20 +58,20 @@ export default function Sponsor() {
       <SponsorName>
         <Wrapper>
           <Image
-            layout="responsive"
+            layout='responsive'
             src={SponsorPic01.src}
             width={517}
             height={339}
-            alt="gis"
+            alt='gis'
           />
         </Wrapper>
         <Wrapper>
           <Image
-            layout="responsive"
+            layout='responsive'
             src={SponsorPic02.src}
             width={7993}
             height={5188}
-            alt="CPALL"
+            alt='CPALL'
           />
         </Wrapper>
       </SponsorName>

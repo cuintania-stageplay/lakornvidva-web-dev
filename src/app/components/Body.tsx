@@ -1,11 +1,11 @@
-import { styled } from "styled-components";
+import { styled } from 'styled-components';
 
-import Header from "./Header";
-import Synopsis from "./Synopsis";
-import Subtitle from "./Subtitle";
-import BuyButton from "./BuyButton";
-import SocialMedia from "./SocialMedia";
-import Sponsor from "./Sponsor";
+import Header from './Header';
+import Synopsis from './Synopsis';
+import Subtitle from './Subtitle';
+import BuyButton from './BuyButton';
+import SocialMedia from './SocialMedia';
+import Sponsor from './Sponsor';
 
 const BodyStyle = styled.div`
   display: flex;
@@ -24,12 +24,12 @@ const BuyButtonStyle = styled.div`
 export default function Body() {
   return (
     <BodyStyle>
-      <Subtitle/>
+      <Subtitle />
       <BuyButtonStyle>
         <BuyButton />
       </BuyButtonStyle>
 
-      <Synopsis/>
+      <Synopsis />
       <SocialMedia />
     </BodyStyle>
   );

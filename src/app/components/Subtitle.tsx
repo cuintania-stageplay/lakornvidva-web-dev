@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { sukhumvit_medium } from "../fonts";
-import { quote } from "../text/Text";
+import styled from 'styled-components';
+import { sukhumvit_medium } from '../fonts';
+import { quote } from '../text/Text';
 
 const Quote = styled.div`
   font-family: ${sukhumvit_medium.style.fontFamily};

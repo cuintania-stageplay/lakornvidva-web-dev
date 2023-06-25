@@ -1,8 +1,8 @@
-import Image from "next/image";
-import facebookIcon from "../images/facebook_icon.png";
-import igIcon from "../images/instagram_icon.png";
-import tiktokIcon from "../images/tiktok_icon.png";
-import { styled } from "styled-components";
+import Image from 'next/image';
+import facebookIcon from '../images/facebook_icon.png';
+import igIcon from '../images/instagram_icon.png';
+import tiktokIcon from '../images/tiktok_icon.png';
+import { styled } from 'styled-components';
 
 const IconBox = styled.div`
   width: max(200px, 21.2vw);
@@ -26,14 +26,14 @@ const IconStyle = styled.a`
 export default function SocialMedia() {
   return (
     <IconBox>
-      <IconStyle color="#00E225" href="https://www.facebook.com/culakornvidva">
-        <Image src={facebookIcon.src} width={100} height={100} alt="FB" />
+      <IconStyle color='#00E225' href='https://www.facebook.com/culakornvidva'>
+        <Image src={facebookIcon.src} width={100} height={100} alt='FB' />
       </IconStyle>
-      <IconStyle color="#358FAF" href="https://www.instagram.com/lakornvidva/">
-        <Image src={igIcon.src} width={100} height={100} alt="IG" />
+      <IconStyle color='#358FAF' href='https://www.instagram.com/lakornvidva/'>
+        <Image src={igIcon.src} width={100} height={100} alt='IG' />
       </IconStyle>
-      <IconStyle color="#E93224" href="https://www.tiktok.com/@culakornvidva">
-        <Image src={tiktokIcon.src} width={100} height={100} alt="Tiktok" />
+      <IconStyle color='#E93224' href='https://www.tiktok.com/@culakornvidva'>
+        <Image src={tiktokIcon.src} width={100} height={100} alt='Tiktok' />
       </IconStyle>
     </IconBox>
   );
