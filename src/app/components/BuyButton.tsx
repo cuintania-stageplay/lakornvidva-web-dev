@@ -58,8 +58,10 @@ export default function BuyButton() {
     <FullButton>
       <Button
         onClick={() =>
-          (window.location.href =
-            'https://www.ticketmelon.com/lakornvidva/the-neverlasting')
+          window.open(
+            'https://www.ticketmelon.com/lakornvidva/the-neverlasting',
+            '_blank'
+          )
         }
       >
         <TicketBg>
