@@ -1,6 +1,4 @@
 'use client';
-// pre-loaded custom fonts
-import { useState } from 'react';
 import { styled } from 'styled-components';
 
 import Body from './components/Body';

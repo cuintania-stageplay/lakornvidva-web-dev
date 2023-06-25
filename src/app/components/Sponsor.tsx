@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import { styled } from 'styled-components';
-import { anantason, chopsin, sukhumvit_text } from '../fonts';
 import SponsorPic01 from '../images/GISC_Logo.png';
 import SponsorPic02 from '../images/CPALL_Logo.png';
 

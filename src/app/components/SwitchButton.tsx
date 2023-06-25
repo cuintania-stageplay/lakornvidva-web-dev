@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { chopsin, anantason, sukhumvit_medium, sukhumvit_text } from '../fonts';
+import { chopsin } from '../fonts';
 
 //box around circle
 const Box = styled.label`
