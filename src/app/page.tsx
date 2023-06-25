@@ -32,11 +32,10 @@ const Homepage = styled.div`
 `;
 
 export default function Home() {
-    const [language, setLanguage] = useState("TH");
     return (
         <Homepage>
-            <TopBar language={language} setLanguage={setLanguage} />
-            <Body language={language} />
+            <TopBar/>
+            <Body/>
             <Sponsor />
         </Homepage>
     );

@@ -21,15 +21,15 @@ const BuyButtonStyle = styled.div`
   }*/
 `;
 
-export default function Body(state: { language: string }) {
+export default function Body() {
   return (
     <BodyStyle>
-      <Subtitle language={state.language} />
+      <Subtitle/>
       <BuyButtonStyle>
         <BuyButton />
       </BuyButtonStyle>
 
-      <Synopsis language={state.language} />
+      <Synopsis/>
       <SocialMedia />
     </BodyStyle>
   );

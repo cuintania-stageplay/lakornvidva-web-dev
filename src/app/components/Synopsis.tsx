@@ -70,15 +70,15 @@ const Seemore = styled.button`
   text-decoration-color: rgba(255, 255, 255, 0.25);
 `;
 
-export default function Synopsis(state: { language: string }) {
+export default function Synopsis() {
   const [isSeemore, setIsSeemore] = useState(true);
   return (
     <SynopsisBox>
       <SynopsisBig isSeeMore={isSeemore}>
-        {synopsis.get(state.language + "_Big")}
+        {synopsis["TH_Big"]}
       </SynopsisBig>
       <SynopsisSmall isSeeMore={isSeemore}>
-        {synopsis.get(state.language + "_Small")}
+        {synopsis["TH_Small"]}
       </SynopsisSmall>
       <Seemore
         onClick={() => {

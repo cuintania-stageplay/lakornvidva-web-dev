@@ -26,6 +26,6 @@ const Quote = styled.div`
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `;
 
-export default function Subtitle(state: { language: string }) {
-  return <Quote>{quote.get(state.language)}</Quote>;
+export default function Subtitle() {
+  return <Quote>{quote}</Quote>;
 }

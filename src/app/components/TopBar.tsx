@@ -18,10 +18,7 @@ const Wrapper = styled.div`
   width: max(50px, 7.8vw);
 `;
 
-export default function TopBar(state: {
-  language: string;
-  setLanguage: React.Dispatch<React.SetStateAction<string>>;
-}) {
+export default function TopBar() {
   return (
     <>
       <Bar>
