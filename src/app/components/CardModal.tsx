@@ -1,5 +1,10 @@
-import { styled } from 'styled-components';
+import { styled, keyframes } from 'styled-components';
 import Image from 'next/image';
+
+const fadeIn = keyframes`
+  0% {opacity: 0}
+  100% {opacity: 1}
+`;
 
 const Outer = styled.div<{ isShow?: boolean }>`
   width: 100vw;
@@ -10,6 +15,8 @@ const Outer = styled.div<{ isShow?: boolean }>`
   left: 0;
 
   z-index: 10;
+
+  animation: ${fadeIn} 0.25s linear;
 
   display: ${(props) => (props.isShow ? 'flex' : 'none')};
   justify-content: center;
