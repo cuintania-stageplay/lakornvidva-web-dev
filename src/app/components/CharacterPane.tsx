@@ -40,6 +40,9 @@ const CharQuote = styled.div`
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+
+  padding-top: 2.5vw;
+  padding-bottom: 5vw;
 `;
 
 export default function CharacterPane() {
