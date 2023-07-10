@@ -1,5 +1,7 @@
 import { styled, keyframes } from 'styled-components';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
+import React, { useState } from 'react';
 
 const fadeIn = keyframes`
   0% {opacity: 0}
@@ -49,16 +51,56 @@ export default function CardModal(prop: {
   isShow: boolean;
   setIsShow: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const variantsContainer = {
+    front: { rotateY: 0 },
+    back: { rotateY: 180 },
+  };
+
+  const variantsImage = {
+    front: { rotateY: 0 },
+    back: { rotateY: -180 },
+  };
+
+  const handleClick = () => {
+    setIsFlipped(!isFlipped);
+  };
+
   return (
     <Outer isShow={prop.isShow}>
       <Blocker onClick={() => prop.setIsShow(false)} />
       <Inner>
-        <Image
-          src={prop.frontCard}
-          width={450}
-          height={735}
-          alt={prop.characterName}
-        />
+        <motion.div
+          style={{
+            width: 450,
+            height: 735,
+            perspective: 1000,
+            cursor: 'pointer',
+          }}
+          onClick={handleClick}
+        >
+          <motion.div
+            animate={isFlipped ? 'back' : 'front'}
+            variants={variantsContainer}
+            style={{
+              width: '100%',
+              height: '100%',
+            }}
+            transition={{ duration: 1, type: 'spring', bounce: 0.3 }}
+          >
+            <motion.img
+              src={isFlipped ? prop.backCard : prop.frontCard}
+              animate={isFlipped ? 'back' : 'front'}
+              variants={variantsImage}
+              style={{
+                width: '100%',
+                height: '100%',
+              }}
+              transition={{ duration: 1, type: 'spring', bounce: 0.3 }}
+            />
+          </motion.div>
+        </motion.div>
       </Inner>
     </Outer>
   );
