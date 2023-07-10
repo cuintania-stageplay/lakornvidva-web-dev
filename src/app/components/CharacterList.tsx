@@ -12,13 +12,15 @@ import { BoomIcon, BoomFront, BoomBack } from './CharacterPicture';
 import { MagicIcon, MagicFront, MagicBack } from './CharacterPicture';
 
 const CharacterBox = styled.div`
-  width: 73vw;
-
-  padding: 5vw;
+  width: 85vw;
 
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+`;
+
+const CharacterLastBox = styled(CharacterBox)`
+  width: 42.5vw;
 `;
 
 export default function CharacterList() {
@@ -77,7 +79,8 @@ export default function CharacterList() {
           backCard={DenaBack.src}
         />
       </CharacterBox>
-      <CharacterBox>
+
+      <CharacterLastBox>
         <CharacterIcon
           characterName='Boom'
           icon={BoomIcon.src}
@@ -90,7 +93,7 @@ export default function CharacterList() {
           frontCard={MagicFront.src}
           backCard={MagicBack.src}
         />
-      </CharacterBox>
+      </CharacterLastBox>
     </>
   );
 }

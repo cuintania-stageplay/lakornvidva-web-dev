@@ -5,10 +5,13 @@ import CardModal from './CardModal';
 
 const Wrapper = styled.button`
   background: radial-gradient(rgb(255, 255, 255, 1) 0%, transparent 70%);
-  width: max(50px, 12vw);
-  height: max(50px, 12vw);
+  width: max(50px, 18vw);
+  height: max(50px, 18vw);
 
-  border-radius: max(25px, 10vw);
+  display: flex;
+  justify-content: center;
+
+  border-radius: max(25px, 9vw);
   border-color: transparent;
 `;
 
