@@ -6,11 +6,13 @@ const PaneStyle = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  margin: 5vw;
 `;
 
 const CharHeader = styled.div`
   font-family: ${sukhumvit_medium.style.fontFamily};
-  font-size: 40px;
+  font-size: max(2vw, 12px);
   font-weight: 700;
 
   background: radial-gradient(
@@ -26,7 +28,7 @@ const CharHeader = styled.div`
 
 const CharQuote = styled.div`
   font-family: ${sukhumvit_medium.style.fontFamily};
-  font-size: 32px;
+  font-size: max(1.67vw, 11px);
   font-weight: 600;
 
   background: radial-gradient(

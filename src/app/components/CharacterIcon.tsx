@@ -4,10 +4,11 @@ import Image from 'next/image';
 import CardModal from './CardModal';
 
 const Wrapper = styled.button`
-  background: radial-gradient(rgb(255, 255, 255, 0.5), transparent);
-  width: max(50px, 10vw);
-  height: max(50px, 10vw);
-  border-radius: max(25px, 5vw);
+  background: radial-gradient(rgb(255, 255, 255, 0.85), transparent);
+  width: max(50px, 12vw);
+  height: max(50px, 12vw);
+
+  border-radius: max(25px, 10vw);
   border-color: transparent;
 `;
 

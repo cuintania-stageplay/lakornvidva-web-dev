@@ -24,7 +24,7 @@ const Outer = styled.div<{ isShow?: boolean }>`
 `;
 
 const Inner = styled.div`
-  width: max(22vw, 200px);
+  width: max(22vw, 240px);
 `;
 
 export default function CardModal(prop: {
