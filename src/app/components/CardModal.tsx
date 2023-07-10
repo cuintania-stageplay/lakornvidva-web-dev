@@ -64,7 +64,12 @@ export default function CardModal(prop: {
 
   return (
     <Outer isShow={prop.isShow}>
-      <Blocker onClick={() => prop.setIsShow(false)} />
+      <Blocker
+        onClick={() => {
+          prop.setIsShow(false);
+          setIsFlipped(false);
+        }}
+      />
       <Inner>
         <motion.div
           style={{
