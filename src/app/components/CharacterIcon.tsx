@@ -4,7 +4,7 @@ import Image from 'next/image';
 import CardModal from './CardModal';
 
 const Wrapper = styled.button`
-  background: radial-gradient(rgb(255, 255, 255, 0.85), transparent);
+  background: radial-gradient(rgb(255, 255, 255, 1) 0%, transparent 70%);
   width: max(50px, 12vw);
   height: max(50px, 12vw);
 
