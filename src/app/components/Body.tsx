@@ -4,6 +4,7 @@ import Synopsis from './Synopsis';
 import Subtitle from './Subtitle';
 import BuyButton from './BuyButton';
 import SocialMedia from './SocialMedia';
+import CharacterPane from './CharacterPane';
 
 const BodyStyle = styled.div`
   display: flex;
@@ -28,6 +29,7 @@ export default function Body() {
       </BuyButtonStyle>
 
       <Synopsis />
+      <CharacterPane/>
       <SocialMedia />
     </BodyStyle>
   );
