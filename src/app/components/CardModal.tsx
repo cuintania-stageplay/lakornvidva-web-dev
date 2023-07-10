@@ -23,8 +23,23 @@ const Outer = styled.div<{ isShow?: boolean }>`
   align-items: center;
 `;
 
+const Blocker = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+`;
+
 const Inner = styled.div`
   width: max(22vw, 240px);
+
+  position: fixed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export default function CardModal(prop: {
@@ -35,7 +50,8 @@ export default function CardModal(prop: {
   setIsShow: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
   return (
-    <Outer isShow={prop.isShow} onClick={() => prop.setIsShow(false)}>
+    <Outer isShow={prop.isShow}>
+      <Blocker onClick={() => prop.setIsShow(false)} />
       <Inner>
         <Image
           src={prop.frontCard}
