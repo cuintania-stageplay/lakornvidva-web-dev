@@ -1,21 +1,17 @@
-import { styled } from 'styled-components';
-import Image from 'next/image';
-import RyuPic from '../images/character-icon/ryu.png';
-
-const Wrapper = styled.div`
-  background: radial-gradient(rgb(255, 255, 255, 0.5), transparent);
-  width: max(50px, 10vw);
-  height: max(50px, 10vw);
-  border-radius: max(25px, 5vw);
-  border-color: transparent;
-`;
+import CharacterIcon from './CharacterIcon';
+import RyuIcon from '../images/character-icon/ryu.png';
+import RyuFront from '../images/character-card-front/ryu-front.png';
+import RyuBack from '../images/character-card-back/ryu-back.png';
 
 export default function CharacterList() {
   return (
     <>
-      <Wrapper>
-        <Image src={RyuPic.src} width={330} height={330} alt='Ryu' />
-      </Wrapper>
+      <CharacterIcon
+        characterName='Ryu'
+        icon={RyuIcon.src}
+        frontCard={RyuFront.src}
+        backCard={RyuBack.src}
+      />
     </>
   );
 }
