@@ -35,13 +35,8 @@ const Blocker = styled.div`
 `;
 
 const Inner = styled.div`
-  width: max(22vw, 240px);
-
-  position: fixed;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: auto;
+  height: max(420px, 75vh);
 `;
 
 export default function CardModal(prop: {
@@ -73,8 +68,8 @@ export default function CardModal(prop: {
       <Inner>
         <motion.div
           style={{
-            width: 450,
-            height: 735,
+            width: 'auto',
+            height: '100%',
             perspective: 1000,
             cursor: 'pointer',
           }}
