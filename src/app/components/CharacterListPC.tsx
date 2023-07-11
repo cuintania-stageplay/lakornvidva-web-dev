@@ -1,5 +1,7 @@
 import { styled } from 'styled-components';
+
 import CharacterIcon from './CharacterIcon';
+
 import { RyuIcon, RyuFront, RyuBack } from './CharacterPicture';
 import { PluIcon, PluFront, PluBack } from './CharacterPicture';
 import { NampudIcon, NampudFront, NampudBack } from './CharacterPicture';
@@ -11,8 +13,21 @@ import { DenaIcon, DenaFront, DenaBack } from './CharacterPicture';
 import { BoomIcon, BoomFront, BoomBack } from './CharacterPicture';
 import { MagicIcon, MagicFront, MagicBack } from './CharacterPicture';
 
+const CharacterStyle = styled.div`
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+
+  width: 100vw;
+  height: 75vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+`;
+
 const CharacterBox = styled.div`
-  width: 85vw;
+  width: 98vw;
 
   display: flex;
   flex-direction: row;
@@ -20,12 +35,12 @@ const CharacterBox = styled.div`
 `;
 
 const CharacterLastBox = styled(CharacterBox)`
-  width: 42.5vw;
+  width: 49vw;
 `;
 
-export default function CharacterList() {
+export default function CharacterListPC() {
   return (
-    <>
+    <CharacterStyle>
       <CharacterBox>
         <CharacterIcon
           characterName='Ryu'
@@ -94,6 +109,6 @@ export default function CharacterList() {
           backCard={MagicBack.src}
         />
       </CharacterLastBox>
-    </>
+    </CharacterStyle>
   );
 }

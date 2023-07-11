@@ -1,6 +1,8 @@
-import CharacterList from './CharacterList';
 import { styled } from 'styled-components';
 import { sukhumvit_medium } from '../fonts';
+
+import CharacterListMobile from './CharacterListMobile';
+import CharacterListPC from './CharacterListPC';
 
 const PaneStyle = styled.div`
   display: flex;
@@ -11,9 +13,12 @@ const PaneStyle = styled.div`
 `;
 
 const CharHeader = styled.div`
+  @media screen and (max-width: 480px) {
+    font-size: max(4vw, 15px);
+  }
   font-family: ${sukhumvit_medium.style.fontFamily};
-  font-size: max(2vw, 12px);
-  font-weight: 700;
+  font-size: max(2.23vw, 12px);
+  font-weight: 900;
 
   background: radial-gradient(
     50% 50% at 50% 50%,
@@ -27,8 +32,12 @@ const CharHeader = styled.div`
 `;
 
 const CharQuote = styled.div`
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+
   font-family: ${sukhumvit_medium.style.fontFamily};
-  font-size: max(1.67vw, 11px);
+  font-size: max(1.8vw, 12px);
   font-weight: 600;
 
   background: radial-gradient(
@@ -42,7 +51,7 @@ const CharQuote = styled.div`
   text-fill-color: transparent;
 
   padding-top: 2.5vw;
-  padding-bottom: 5vw;
+  padding-bottom: 3vw;
 `;
 
 export default function CharacterPane() {
@@ -50,7 +59,8 @@ export default function CharacterPane() {
     <PaneStyle>
       <CharHeader>ตัวละคร</CharHeader>
       <CharQuote>เราเชื่อว่านี่คือพื้นที่แห่ง “ความฝัน และ ความหวัง”</CharQuote>
-      <CharacterList />
+      <CharacterListPC />
+      <CharacterListMobile />
     </PaneStyle>
   );
 }
