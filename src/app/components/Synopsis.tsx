@@ -86,7 +86,7 @@ const SeemoreBig = styled(Seemore)`
 `;
 
 const SeemoreSmall = styled(Seemore)`
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 481px) {
     display: none;
   }
 

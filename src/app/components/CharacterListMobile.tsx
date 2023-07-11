@@ -16,7 +16,7 @@ import { BoomIcon, BoomFront, BoomBack } from './CharacterPicture';
 import { MagicIcon, MagicFront, MagicBack } from './CharacterPicture';
 
 const CharacterStyle = styled.div`
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 481px) {
     display: none;
   }
 
