@@ -1,7 +1,9 @@
 'use client';
 
+import Image from 'next/image';
 import styled from 'styled-components';
 import { chopsin, sukhumvit_medium, sukhumvit_text } from '../fonts';
+import TitleLogo from '../images/story_title.png';
 
 const TitleEng = styled.div`
   font-family: ${chopsin.style.fontFamily};
@@ -73,12 +75,30 @@ const TitleTh = styled.div`
   text-shadow: 0px 4px 30px rgba(255, 255, 255, 0.2);
 `;
 
+const Box = styled.div`
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+`;
+
+const Wrapper = styled.div`
+  width: max(300px, 65vw);
+`;
+
 export default function Header() {
   return (
-    <div>
-      <TitleEngShadow>THE NEVERLASTING</TitleEngShadow>
-      <TitleEng>THE NEVERLASTING</TitleEng>
-      <TitleTh>ประตูนิมิต ชีวิตนิรันดร์</TitleTh>
-    </div>
+    <Box>
+      <Wrapper>
+        <Image
+          layout='responsive'
+          src={TitleLogo.src}
+          width={TitleLogo.width}
+          height={TitleLogo.height}
+          alt='The NeverLasting'
+        />
+      </Wrapper>
+    </Box>
   );
 }
