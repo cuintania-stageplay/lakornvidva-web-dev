@@ -7,7 +7,7 @@ const SynopsisStyle = styled.pre<{ isSeeMore?: boolean }>`
   font-family: ${sukhumvit_medium.style.fontFamily};
   font-style: normal;
   font-weight: 400;
-  font-size: max(12px, 1.8vw);
+  font-size: max(12px, 2vw);
 
   width: 73vw;
 
@@ -45,16 +45,25 @@ const SynopsisSmall = styled(SynopsisStyle)`
   @media screen and (min-width: 610px) {
     display: none;
   }
+
+  @media screen and (max-width: 480px) {
+    ${(props) => (props.isSeeMore ? 'display: none;' : '')}
+  }
 `;
 
 const SynopsisBox = styled.div`
   /*min-height: 50vw;*/
   display: flex;
   justify-content: flex-start;
+
+  @media screen and (max-width: 480px) {
+    align-items: center;
+  }
+
   align-items: flex-end;
   flex-direction: column;
 
-  padding-bottom: max(25px, 15vw);
+  padding-bottom: max(25px, 5vw);
 `;
 
 const Seemore = styled.button`
@@ -62,12 +71,29 @@ const Seemore = styled.button`
   font-style: normal;
   font-weight: 400;
   font-size: max(12px, 1.8vw);
-  color: rgba(255, 255, 255, 0.5);
-
-  text-align: right;
 
   text-decoration-line: underline;
+`;
+
+const SeemoreBig = styled(Seemore)`
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+
+  text-align: right;
+  color: rgba(255, 255, 255, 0.5);
   text-decoration-color: rgba(255, 255, 255, 0.25);
+`;
+
+const SeemoreSmall = styled(Seemore)`
+  @media screen and (min-width: 481px) {
+    display: none;
+  }
+
+  padding-top: max(15px, 2vw);
+  text-align: center;
+  color: rgba(255, 99, 99, 0.75);
+  text-decoration-color: rgba(255, 99, 99, 0.75);
 `;
 
 export default function Synopsis() {
@@ -75,16 +101,26 @@ export default function Synopsis() {
   return (
     <SynopsisBox>
       <SynopsisBig isSeeMore={isSeemore}>{synopsis['TH_Big']}</SynopsisBig>
+
       <SynopsisSmall isSeeMore={isSeemore}>
         {synopsis['TH_Small']}
       </SynopsisSmall>
-      <Seemore
+
+      <SeemoreBig
         onClick={() => {
           setIsSeemore(!isSeemore);
         }}
       >
         {isSeemore ? 'See more' : 'See less'}
-      </Seemore>
+      </SeemoreBig>
+
+      <SeemoreSmall
+        onClick={() => {
+          setIsSeemore(!isSeemore);
+        }}
+      >
+        {isSeemore ? 'อ่านเรื่องย่อ' : 'ปิดเรื่องย่อ'}
+      </SeemoreSmall>
     </SynopsisBox>
   );
 }
