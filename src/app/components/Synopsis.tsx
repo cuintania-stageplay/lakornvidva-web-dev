@@ -90,6 +90,7 @@ const SeemoreSmall = styled(Seemore)`
     display: none;
   }
 
+  padding-top: max(15px, 2vw);
   text-align: center;
   color: rgba(255, 99, 99, 0.75);
   text-decoration-color: rgba(255, 99, 99, 0.75);

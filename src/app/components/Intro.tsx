@@ -9,7 +9,7 @@ const IntroBox = styled.pre`
   font-weight: 500;
   text-align: center;
 
-  padding-top: 5vw;
+  padding-top: max(15px, 2vw);
 
   background: linear-gradient(
     180deg,
