@@ -9,7 +9,7 @@ const SectionLine = styled.div`
   width: 53.5vw;
   height: 2px;
 
-  margin-top: 5.5vh;
+  margin-top: 2.5vw;
 
   background: linear-gradient(
     90deg,
