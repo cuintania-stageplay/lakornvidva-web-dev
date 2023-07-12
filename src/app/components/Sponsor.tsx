@@ -1,7 +1,9 @@
 import Image from 'next/image';
 import { styled } from 'styled-components';
-import SponsorPic01 from '../images/GISC_Logo.png';
-import SponsorPic02 from '../images/CPALL_Logo.png';
+import GIS from '../images/GISC_Logo.png';
+import CPAll from '../images/CPALL_Logo.png';
+import LANNA from '../images/LANNA_Logo.png';
+import Ekachai from '../images/Ekachai_Logo.png';
 
 const SectionLine = styled.div`
   width: 53.5vw;
@@ -19,7 +21,7 @@ const SectionLine = styled.div`
 `;
 
 const SponsorName = styled.div`
-  width: 53.5vw;
+  width: max(200px, 55vw);
   padding-top: 2vw;
   padding-bottom: 8vw;
   font-family: 'Cordia New';
@@ -32,10 +34,11 @@ const SponsorName = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
 `;
 
 const Wrapper = styled.div`
-  width: max(50px, 6.5vw);
+  width: max(30px, 6.5vw);
   mix-blend-mode: normal;
   filter: drop-shadow(0px 0px 1.75px #ffffff);
 `;
@@ -57,20 +60,35 @@ export default function Sponsor() {
       <SponsorName>
         <Wrapper>
           <Image
-            layout='responsive'
-            src={SponsorPic01.src}
-            width={517}
-            height={339}
+            src={GIS.src}
+            width={GIS.width}
+            height={GIS.height}
             alt='gis'
           />
         </Wrapper>
         <Wrapper>
           <Image
-            layout='responsive'
-            src={SponsorPic02.src}
-            width={7993}
-            height={5188}
+            src={CPAll.src}
+            width={CPAll.width}
+            height={CPAll.height}
             alt='CPALL'
+          />
+        </Wrapper>
+        <Wrapper>
+          <Image
+            src={LANNA.src}
+            width={LANNA.width}
+            height={LANNA.height}
+            alt='LANNA'
+          />
+        </Wrapper>
+
+        <Wrapper>
+          <Image
+            src={Ekachai.src}
+            width={Ekachai.width}
+            height={Ekachai.height}
+            alt='Ekachai'
           />
         </Wrapper>
       </SponsorName>
