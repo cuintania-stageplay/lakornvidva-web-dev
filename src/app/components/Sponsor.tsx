@@ -37,7 +37,7 @@ const SponsorName = styled.div`
 const Wrapper = styled.div`
   width: max(50px, 6.5vw);
   mix-blend-mode: normal;
-  filter: drop-shadow(0px 0px 6px #ffffff);
+  filter: drop-shadow(0px 0px 1.75px #ffffff);
 `;
 
 const SponsorStyle = styled.div`
