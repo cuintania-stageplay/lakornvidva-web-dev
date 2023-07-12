@@ -4,7 +4,7 @@ import { quote } from '../text/Text';
 
 const Quote = styled.div`
   font-family: ${sukhumvit_medium.style.fontFamily};
-  font-size: max(12px, 2.23vw);
+  font-size: max(13px, 2.23vw);
   font-weight: 900;
   text-align: center;
 

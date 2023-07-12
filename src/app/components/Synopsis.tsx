@@ -7,7 +7,7 @@ const SynopsisStyle = styled.pre<{ isSeeMore?: boolean }>`
   font-family: ${sukhumvit_medium.style.fontFamily};
   font-style: normal;
   font-weight: 400;
-  font-size: max(12px, 1.8vw);
+  font-size: max(12px, 2vw);
 
   width: 73vw;
 

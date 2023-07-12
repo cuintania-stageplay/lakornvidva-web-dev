@@ -5,7 +5,7 @@ import { intro } from '../text/Text';
 
 const IntroBox = styled.pre`
   font-family: ${sukhumvit_medium.style.fontFamily};
-  font-size: max(11px, 2vw);
+  font-size: max(12px, 2vw);
   font-weight: 500;
   text-align: center;
 
