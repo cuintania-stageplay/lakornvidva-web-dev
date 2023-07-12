@@ -5,6 +5,7 @@ import Subtitle from './Subtitle';
 import BuyButton from './BuyButton';
 import SocialMedia from './SocialMedia';
 import CharacterPane from './CharacterPane';
+import Intro from './Intro';
 
 const BodyStyle = styled.div`
   display: flex;
@@ -24,12 +25,13 @@ export default function Body() {
   return (
     <BodyStyle>
       <Subtitle />
+      <Intro />
       <BuyButtonStyle>
         <BuyButton />
       </BuyButtonStyle>
 
       <Synopsis />
-      <CharacterPane/>
+      <CharacterPane />
       <SocialMedia />
     </BodyStyle>
   );
