@@ -3,7 +3,7 @@ import { styled } from 'styled-components';
 import Image from 'next/image';
 import CardModal from './CardModal';
 
-const Wrapper = styled.button`
+const Wrapper = styled.button<{color: string}>`
   background: radial-gradient(rgb(255, 255, 255, 1) 0%, transparent 70%);
   width: 21vw;
   height: 21vw;
@@ -18,6 +18,10 @@ const Wrapper = styled.button`
 
   border-radius: max(25px, 9vw);
   border-color: transparent;
+
+  &: hover{
+    background: radial-gradient(${(prop) => prop.color} 0%, transparent 70%);
+  }
 `;
 
 export default function CharacterIcon(src: {
@@ -25,12 +29,13 @@ export default function CharacterIcon(src: {
   icon: string;
   frontCard: string;
   backCard: string;
+  color: string;
 }) {
   const [isShow, setIsShow] = useState(false);
 
   return (
     <>
-      <Wrapper onClick={() => setIsShow(!isShow)}>
+      <Wrapper color={src.color} onClick={() => setIsShow(!isShow)}>
         <Image
           src={src.icon}
           width={330}

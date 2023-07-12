@@ -55,18 +55,21 @@ export default function CharacterListMobile() {
           icon={RyuIcon.src}
           frontCard={RyuFront.src}
           backCard={RyuBack.src}
+          color='#e93224'
         />
         <CharacterIcon
           characterName='Aom'
           icon={AomIcon.src}
           frontCard={AomFront.src}
           backCard={AomBack.src}
+          color='#66b234'
         />
         <CharacterIcon
           characterName='Plu'
           icon={PluIcon.src}
           frontCard={PluFront.src}
           backCard={PluBack.src}
+          color='#ba3345'
         />
       </ThreeCharacterBox>
 
@@ -76,18 +79,21 @@ export default function CharacterListMobile() {
           icon={AutoIcon.src}
           frontCard={AutoFront.src}
           backCard={AutoBack.src}
+          color='#00e225'
         />
         <CharacterIcon
           characterName='Nampud'
           icon={NampudIcon.src}
           frontCard={NampudFront.src}
           backCard={NampudBack.src}
+          color='#ed2a6f'
         />
         <CharacterIcon
           characterName='Boom'
           icon={BoomIcon.src}
           frontCard={BoomFront.src}
           backCard={BoomBack.src}
+          color='#0dc0ff'
         />
       </ThreeCharacterBox>
 
@@ -97,12 +103,14 @@ export default function CharacterListMobile() {
           icon={MagicIcon.src}
           frontCard={MagicFront.src}
           backCard={MagicBack.src}
+          color='#8e1eff'
         />
         <CharacterIcon
           characterName='Pat'
           icon={PatIcon.src}
           frontCard={PatFront.src}
           backCard={PatBack.src}
+          color='#ffb21e'
         />
       </TwoCharacterBox>
 
@@ -112,6 +120,7 @@ export default function CharacterListMobile() {
           icon={DenaIcon.src}
           frontCard={DenaFront.src}
           backCard={DenaBack.src}
+          color='#21dec7'
         />
         <Wrapper>
           <Image
@@ -127,6 +136,7 @@ export default function CharacterListMobile() {
           icon={FriendIcon.src}
           frontCard={FriendFront.src}
           backCard={FriendBack.src}
+          color='#faff00'
         />
       </ThreeCharacterBox>
     </CharacterStyle>

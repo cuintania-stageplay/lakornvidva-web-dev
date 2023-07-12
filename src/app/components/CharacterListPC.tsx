@@ -47,24 +47,28 @@ export default function CharacterListPC() {
           icon={RyuIcon.src}
           frontCard={RyuFront.src}
           backCard={RyuBack.src}
+          color='#e93224'
         />
         <CharacterIcon
           characterName='Plu'
           icon={PluIcon.src}
           frontCard={PluFront.src}
           backCard={PluBack.src}
+          color='#ba3345'
         />
         <CharacterIcon
           characterName='Nampud'
           icon={NampudIcon.src}
           frontCard={NampudFront.src}
           backCard={NampudBack.src}
+          color='#ed2a6f'
         />
         <CharacterIcon
           characterName='Pat'
           icon={PatIcon.src}
           frontCard={PatFront.src}
           backCard={PatBack.src}
+          color='#ffb21e'
         />
       </CharacterBox>
 
@@ -74,24 +78,28 @@ export default function CharacterListPC() {
           icon={FriendIcon.src}
           frontCard={FriendFront.src}
           backCard={FriendBack.src}
+          color='#faff00'
         />
         <CharacterIcon
           characterName='Aom'
           icon={AomIcon.src}
           frontCard={AomFront.src}
           backCard={AomBack.src}
+          color='#66b234'
         />
         <CharacterIcon
           characterName='Auto'
           icon={AutoIcon.src}
           frontCard={AutoFront.src}
           backCard={AutoBack.src}
+          color='#00e225'
         />
         <CharacterIcon
           characterName='Dena'
           icon={DenaIcon.src}
           frontCard={DenaFront.src}
           backCard={DenaBack.src}
+          color='#21dec7'
         />
       </CharacterBox>
 
@@ -101,12 +109,14 @@ export default function CharacterListPC() {
           icon={BoomIcon.src}
           frontCard={BoomFront.src}
           backCard={BoomBack.src}
+          color='#0dc0ff'
         />
         <CharacterIcon
           characterName='Magic'
           icon={MagicIcon.src}
           frontCard={MagicFront.src}
           backCard={MagicBack.src}
+          color='#8e1eff'
         />
       </CharacterLastBox>
     </CharacterStyle>
