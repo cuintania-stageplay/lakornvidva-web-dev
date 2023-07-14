@@ -47,6 +47,7 @@ export default function CardModal(prop: {
   setIsShow: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
   const [isFlipped, setIsFlipped] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   const variantsContainer = {
     front: { rotateY: 0 },
@@ -59,13 +60,25 @@ export default function CardModal(prop: {
   };
 
   const handleClick = () => {
+    if (isAnimating) return;
+    setIsAnimating(true);
     setIsFlipped(!isFlipped);
   };
+
+  React.useEffect(() => {
+    if (isAnimating) {
+      const timer = setTimeout(() => {
+        setIsAnimating(false);
+      }, 1000); // set the timeout equal to the duration of the animation
+      return () => clearTimeout(timer);
+    }
+  }, [isAnimating]);
 
   return (
     <Outer isShow={prop.isShow}>
       <Blocker
         onClick={() => {
+          if (isAnimating) return;
           prop.setIsShow(false);
           setIsFlipped(false);
         }}
@@ -87,7 +100,7 @@ export default function CardModal(prop: {
               width: '100%',
               height: '100%',
             }}
-            transition={{ duration: 1, type: 'spring', bounce: 0.3 }}
+            transition={{ duration: 1, type: 'spring' }}
           >
             <motion.img
               src={isFlipped ? prop.backCard : prop.frontCard}
@@ -97,7 +110,7 @@ export default function CardModal(prop: {
                 width: '100%',
                 height: '100%',
               }}
-              transition={{ duration: 1, type: 'spring', bounce: 0.3 }}
+              transition={{ duration: 1, type: 'spring' }}
             />
           </motion.div>
         </motion.div>
