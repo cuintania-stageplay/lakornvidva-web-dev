@@ -39,6 +39,14 @@ const MobileBox = styled.div`
   align-items: center;
 `;
 
+const QuoteContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6vw;
+`;
+
 export default function VdoBox() {
   return (
     <>
@@ -51,8 +59,10 @@ export default function VdoBox() {
       </PCBox>
       <MobileBox>
         <TeaserVDO />
-        <Subtitle />
-        <Intro />
+        <QuoteContainer>
+          <Subtitle />
+          <Intro />
+        </QuoteContainer>
       </MobileBox>
     </>
   );
