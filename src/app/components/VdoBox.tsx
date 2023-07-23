@@ -2,7 +2,6 @@ import { styled } from 'styled-components';
 import Intro from './Intro';
 import Subtitle from './Subtitle';
 import TeaserVDO from './Teaser';
-import BuyButton from './BuyButton';
 
 const TextBox = styled.div`
   width: 45vw;
@@ -40,15 +39,6 @@ const MobileBox = styled.div`
   align-items: center;
 `;
 
-const BuyButtonStyle = styled.div`
-  @media screen and (max-width: 480px) {
-    padding-top: max(25px, 3.5vw);
-    padding-bottom: max(25px, 3.5vw);
-  }
-
-  padding-top: 2vw;
-`;
-
 export default function VdoBox() {
   return (
     <>
@@ -57,16 +47,10 @@ export default function VdoBox() {
         <TextBox>
           <Subtitle />
           <Intro />
-          <BuyButtonStyle>
-            <BuyButton />
-          </BuyButtonStyle>
         </TextBox>
       </PCBox>
       <MobileBox>
         <TeaserVDO />
-        <BuyButtonStyle>
-          <BuyButton />
-        </BuyButtonStyle>
         <Subtitle />
         <Intro />
       </MobileBox>
