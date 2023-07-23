@@ -12,21 +12,10 @@ const BodyStyle = styled.div`
   justify-content: space-between;
 `;
 
-const BuyButtonStyle = styled.div`
-  @media screen and (max-width: 480px) {
-    padding-top: max(25px, 3.5vw);
-    padding-bottom: max(25px, 3.5vw);
-  }
-
-  padding-top: 2vw;
-`;
-
 export default function Body() {
   return (
     <BodyStyle>
-      <BuyButtonStyle>
-        <BuyButton />
-      </BuyButtonStyle>
+      <BuyButton />
       <VdoBox />
       <Synopsis />
       <CharacterPane />

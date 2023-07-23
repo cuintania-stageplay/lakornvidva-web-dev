@@ -5,6 +5,11 @@ import ticketPic from '../images/ticket.png';
 import cursor from '../images/cursor.png';
 
 const FullButton = styled.div`
+  @media screen and (max-width: 480px) {
+    padding-top: max(25px, 3.5vw);
+    padding-bottom: max(25px, 3.5vw);
+  }
+
   width: 100%;
   display: flex;
   flex-direction: column;
