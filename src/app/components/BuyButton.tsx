@@ -45,8 +45,6 @@ const TicketBg = styled.div`
   width: max(40px, 4.94vw);
   height: max(40px, 4.94vw);
 
-  padding: max(6px, 0.703vw);
-
   background: #ffffff;
   border-radius: 50%;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -70,7 +68,12 @@ export default function BuyButton() {
         }
       >
         <TicketBg>
-          <Image src={ticketPic.src} width={68} height={68} alt='>>' />
+          <Image
+            src={ticketPic.src}
+            width={ticketPic.width}
+            height={ticketPic.height}
+            alt='>>'
+          />
         </TicketBg>
         BUY NOW
       </Button>
