@@ -27,6 +27,7 @@ const Homepage = styled.div`
   justify-content: space-between;
 
   min-height: 100vh;
+  overflow: hidden;
 `;
 
 export default function Home() {
