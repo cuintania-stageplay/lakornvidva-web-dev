@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { styled } from 'styled-components';
-import Image from "next/legacy/image";
+import Image from 'next/legacy/image';
 import CardModal from './CardModal';
 
-const Wrapper = styled.button<{color: string}>`
+const Wrapper = styled.button<{ color: string }>`
   background: radial-gradient(rgb(255, 255, 255, 1) 0%, transparent 70%);
   width: 21vw;
   height: 21vw;
@@ -19,7 +19,7 @@ const Wrapper = styled.button<{color: string}>`
   border-radius: max(25px, 9vw);
   border-color: transparent;
 
-  &: hover{
+  &: hover {
     background: radial-gradient(${(prop) => prop.color} 0%, transparent 70%);
   }
 `;

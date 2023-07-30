@@ -1,6 +1,6 @@
 import React from 'react';
 import { styled } from 'styled-components';
-import Image from "next/legacy/image";
+import Image from 'next/legacy/image';
 
 import Logo from '../images/logo/logo-white.png';
 import SwitchButton from './SwitchButton';

@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from 'next/legacy/image';
 import { styled } from 'styled-components';
 import GIS from '../images/sponsor/GISC_Logo.png';
 import CPAll from '../images/sponsor/CPALL_Logo.png';

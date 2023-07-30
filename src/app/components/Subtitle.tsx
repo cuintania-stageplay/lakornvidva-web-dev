@@ -23,9 +23,15 @@ const Quote = styled.div`
 `;
 
 const QuoteBorder = styled(Quote)`
-  text-shadow: -0.05vw -0.05vw 0 #006a04, 0 -0.05vw 0 #006a04,
-    0.05vw -0.05vw 0 #006a04, 0.05vw 0 0 #006a04, 0.05vw 0.05vw 0 #006a04,
-    0 0.05vw 0 #006a04, -0.05vw 0.05vw 0 #006a04, -0.05vw 0 0 #006a04;
+  text-shadow:
+    -0.05vw -0.05vw 0 #006a04,
+    0 -0.05vw 0 #006a04,
+    0.05vw -0.05vw 0 #006a04,
+    0.05vw 0 0 #006a04,
+    0.05vw 0.05vw 0 #006a04,
+    0 0.05vw 0 #006a04,
+    -0.05vw 0.05vw 0 #006a04,
+    -0.05vw 0 0 #006a04;
 
   -webkit-filter: drop-shadow(-4px -4px 10px rgba(228, 68, 68, 0.8));
 `;

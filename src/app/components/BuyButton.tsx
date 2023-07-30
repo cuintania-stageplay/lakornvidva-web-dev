@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from 'next/legacy/image';
 import { styled } from 'styled-components';
 import { chopsin } from '../fonts';
 import ticketPic from '../images/util/ticket.png';
