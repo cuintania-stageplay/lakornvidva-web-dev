@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from 'next/legacy/image';
 import facebookIcon from '../images/social_media/facebook_icon.png';
 import igIcon from '../images/social_media/instagram_icon.png';
 import tiktokIcon from '../images/social_media/tiktok_icon.png';
@@ -14,11 +14,13 @@ const IconBox = styled.div`
 `;
 
 const IconStyle = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: max(6.5vw, 55px);
   border-width: 6px;
   border-radius: 50%;
   border-color: transparent;
-
   &:hover {
     border-color: ${(props) => props.color};
   }
