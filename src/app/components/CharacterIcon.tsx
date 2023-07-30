@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { styled } from 'styled-components';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import CardModal from './CardModal';
 
 const Wrapper = styled.button<{color: string}>`

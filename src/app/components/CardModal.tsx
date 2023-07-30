@@ -1,5 +1,4 @@
 import { styled, keyframes } from 'styled-components';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 

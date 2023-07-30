@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import facebookIcon from '../images/social_media/facebook_icon.png';
 import igIcon from '../images/social_media/instagram_icon.png';
 import tiktokIcon from '../images/social_media/tiktok_icon.png';

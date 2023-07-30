@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import styled from 'styled-components';
 import { chopsin, sukhumvit_medium, sukhumvit_text } from '../fonts';
 import TitleLogo from '../images/logo/story_title.png';
