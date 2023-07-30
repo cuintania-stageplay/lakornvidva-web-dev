@@ -4,9 +4,9 @@ import { styled } from 'styled-components';
 import Body from './components/Body';
 import TopBar from './components/TopBar';
 
-import Noise from './images/noise.webp';
-import Partical from './images/particle.webp';
-import Gradient from './images/gradient.webp';
+import Noise from './images/util/noise.webp';
+import Partical from './images/util/particle.webp';
+import Gradient from './images/util/gradient.webp';
 import Sponsor from './components/Sponsor';
 
 const Homepage = styled.div`

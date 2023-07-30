@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 import CharacterIcon from './CharacterIcon';
 
-import Logo from '../images/logo-white.png';
+import Logo from '../images/logo/logo-white.png';
 import { RyuIcon, RyuFront, RyuBack } from './CharacterPicture';
 import { PluIcon, PluFront, PluBack } from './CharacterPicture';
 import { NampudIcon, NampudFront, NampudBack } from './CharacterPicture';

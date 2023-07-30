@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import { styled } from 'styled-components';
 import { chopsin } from '../fonts';
-import ticketPic from '../images/ticket.png';
-import cursor from '../images/cursor.png';
+import ticketPic from '../images/util/ticket.png';
+import cursor from '../images/util/cursor.png';
 
 const FullButton = styled.div`
   @media screen and (max-width: 480px) {

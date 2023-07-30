@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import styled from 'styled-components';
 import { chopsin, sukhumvit_medium, sukhumvit_text } from '../fonts';
-import TitleLogo from '../images/story_title.png';
+import TitleLogo from '../images/logo/story_title.png';
 
 const TitleEng = styled.div`
   font-family: ${chopsin.style.fontFamily};

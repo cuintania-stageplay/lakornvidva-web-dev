@@ -2,7 +2,7 @@ import React from 'react';
 import { styled } from 'styled-components';
 import Image from 'next/image';
 
-import Logo from '../images/logo-white.png';
+import Logo from '../images/logo/logo-white.png';
 import SwitchButton from './SwitchButton';
 import Header from './Header';
 

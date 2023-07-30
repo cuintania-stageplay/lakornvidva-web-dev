@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import { styled } from 'styled-components';
-import GIS from '../images/GISC_Logo.png';
-import CPAll from '../images/CPALL_Logo.png';
-import LANNA from '../images/LANNA_Logo.png';
-import Ekachai from '../images/Ekachai_Logo.png';
+import GIS from '../images/sponsor/GISC_Logo.png';
+import CPAll from '../images/sponsor/CPALL_Logo.png';
+import LANNA from '../images/sponsor/LANNA_Logo.png';
+import Ekachai from '../images/sponsor/Ekachai_Logo.png';
 
 const SectionLine = styled.div`
   width: 53.5vw;

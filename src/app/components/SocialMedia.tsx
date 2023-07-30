@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import facebookIcon from '../images/facebook_icon.png';
-import igIcon from '../images/instagram_icon.png';
-import tiktokIcon from '../images/tiktok_icon.png';
-import youtubeIcon from '../images/youtube_icon.png';
+import facebookIcon from '../images/social_media/facebook_icon.png';
+import igIcon from '../images/social_media/instagram_icon.png';
+import tiktokIcon from '../images/social_media/tiktok_icon.png';
+import youtubeIcon from '../images/social_media/youtube_icon.png';
 import { styled } from 'styled-components';
 
 const IconBox = styled.div`
