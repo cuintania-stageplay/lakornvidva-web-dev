@@ -1,4 +1,7 @@
 import { styled, keyframes } from 'styled-components';
+import SaveTicket from './SaveTicket';
+import { chopsin } from '../fonts';
+import Ticket from './Ticket';
 
 const fadeIn = keyframes`
   0% {opacity: 0}
@@ -22,14 +25,51 @@ const Outer = styled.div<{ $isShow?: boolean }>`
   align-items: center;
 `;
 
+const Inner = styled.div`
+  z-index: 15;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 85vh;
+`;
+
+const Blocker = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+`;
+
+const TextStyle = styled.div`
+  font-family: ${chopsin.style.fontFamily};
+  font-size: max(20px, 3vw);
+  font-weight: 900;
+
+  background-color: white;
+  color: transparent;
+  text-shadow: 0px 3px 3px rgba(108, 108, 108, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+`;
+
 export default function TicketModal(prop: {
   isShow: boolean;
   setIsShow: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
   return (
-    <Outer
-      $isShow={prop.isShow}
-      onClick={() => prop.setIsShow(!prop.isShow)}
-    ></Outer>
+    <Outer $isShow={prop.isShow}>
+      <Blocker onClick={() => prop.setIsShow(!prop.isShow)} />
+      <Inner>
+        <TextStyle>YOUR TICKET</TextStyle>
+        <Ticket />
+        <SaveTicket />
+      </Inner>
+    </Outer>
   );
 }
