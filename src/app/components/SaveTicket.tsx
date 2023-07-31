@@ -6,10 +6,10 @@ import { chopsin } from '../fonts';
 import DownloadIcon from '../images/util/download_icon.png';
 
 const Button = styled.button`
-  width: max(150px, 20vw);
-  height: max(33.75px, 4.5vw);
+  width: max(250px, 20vw);
+  height: max(42.5px, 4.5vw);
 
-  border-radius: max(16.875px, 2.25vw);
+  border-radius: max(21.25px, 2.25vw);
 
   background: linear-gradient(
     104.23deg,
@@ -19,7 +19,7 @@ const Button = styled.button`
   );
 
   font-family: ${chopsin.style.fontFamily};
-  font-size: max(12px, 1.5vw);
+  font-size: max(15px, 1.5vw);
 
   padding: 1.25vw;
 
@@ -30,8 +30,8 @@ const Button = styled.button`
 `;
 
 const Wrapper = styled.div`
-  width: max(16.875px, 2.25vw);
-  height: max(16.875px, 2.25vw);
+  width: max(20px, 2.25vw);
+  height: max(20px, 2.25vw);
 `;
 
 export default function SaveTicket(prop: {

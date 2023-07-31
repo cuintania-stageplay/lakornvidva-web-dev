@@ -30,6 +30,8 @@ const Outer = styled.div<{ $isShow?: boolean }>`
 const Inner = styled.div`
   z-index: 15;
 
+  min-height: 90vh;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -49,7 +51,7 @@ const Blocker = styled.div`
 
 const TextStyle = styled.div`
   font-family: ${chopsin.style.fontFamily};
-  font-size: max(20px, 3vw);
+  font-size: max(20px, 3.5vw);
   font-weight: 900;
 
   background-color: white;
