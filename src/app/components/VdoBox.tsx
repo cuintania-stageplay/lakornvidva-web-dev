@@ -2,6 +2,8 @@ import { styled } from 'styled-components';
 import Intro from './Intro';
 import Subtitle from './Subtitle';
 import TeaserVDO from './Teaser';
+import BuyButton from './BuyButton';
+import PrintTicketButton from './PrintTicketButton';
 
 const TextBox = styled.div`
   width: 45vw;
@@ -16,6 +18,13 @@ const PCBox = styled.div`
     display: none;
   }
 
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const InsidePCBox = styled.div`
   padding-top: 5vw;
 
   width: 100vw;
@@ -51,14 +60,18 @@ export default function VdoBox() {
   return (
     <>
       <PCBox>
-        <TeaserVDO />
-        <TextBox>
-          <Subtitle />
-          <Intro />
-        </TextBox>
+        <BuyButton />
+        <InsidePCBox>
+          <TeaserVDO />
+          <TextBox>
+            <Subtitle />
+            <Intro />
+          </TextBox>
+        </InsidePCBox>
       </PCBox>
       <MobileBox>
         <TeaserVDO />
+        <BuyButton />
         <QuoteContainer>
           <Subtitle />
           <Intro />

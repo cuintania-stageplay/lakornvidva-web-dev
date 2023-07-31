@@ -3,7 +3,6 @@ import Synopsis from './Synopsis';
 import SocialMedia from './SocialMedia';
 import CharacterPane from './CharacterPane';
 import VdoBox from './VdoBox';
-import BuyButton from './BuyButton';
 
 const BodyStyle = styled.div`
   display: flex;
@@ -15,7 +14,6 @@ const BodyStyle = styled.div`
 export default function Body() {
   return (
     <BodyStyle>
-      <BuyButton />
       <VdoBox />
       <Synopsis />
       <CharacterPane />
