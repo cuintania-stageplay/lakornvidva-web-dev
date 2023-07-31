@@ -17,6 +17,7 @@
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.6",
     "framer-motion": "^10.12.18",
+    "html2canvas": "^1.4.1",
     "next": "13.4.6",
     "postcss": "8.4.24",
     "prettier-plugin-tailwindcss": "^0.3.0",

@@ -1,4 +1,6 @@
 import { styled, keyframes } from 'styled-components';
+import React, { useRef, useState } from 'react';
+
 import SaveTicket from './SaveTicket';
 import { chopsin } from '../fonts';
 import Ticket from './Ticket';
@@ -62,13 +64,26 @@ export default function TicketModal(prop: {
   isShow: boolean;
   setIsShow: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
+  const printRef = useRef<HTMLDivElement>(null);
+
+  const [inputValue, setInputValue] = useState('');
+
   return (
     <Outer $isShow={prop.isShow}>
-      <Blocker onClick={() => prop.setIsShow(!prop.isShow)} />
+      <Blocker
+        onClick={() => {
+          prop.setIsShow(!prop.isShow);
+          setInputValue('');
+        }}
+      />
       <Inner>
         <TextStyle>YOUR TICKET</TextStyle>
-        <Ticket />
-        <SaveTicket />
+        <Ticket
+          printRef={printRef}
+          inputValue={inputValue}
+          setInputValue={setInputValue}
+        />
+        <SaveTicket printRef={printRef} inputValue={inputValue} />
       </Inner>
     </Outer>
   );
