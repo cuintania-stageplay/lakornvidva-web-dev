@@ -7,7 +7,6 @@ import cursor from '../images/util/cursor.png';
 const FullButton = styled.div`
   @media screen and (max-width: 480px) {
     padding-top: max(25px, 3.5vw);
-    padding-bottom: max(25px, 3.5vw);
   }
 
   width: 100%;

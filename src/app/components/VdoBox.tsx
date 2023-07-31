@@ -53,7 +53,7 @@ const QuoteContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 6vw;
+  margin-top: 10vw;
 `;
 
 export default function VdoBox() {
@@ -66,12 +66,14 @@ export default function VdoBox() {
           <TextBox>
             <Subtitle />
             <Intro />
+            <PrintTicketButton />
           </TextBox>
         </InsidePCBox>
       </PCBox>
       <MobileBox>
         <TeaserVDO />
         <BuyButton />
+        <PrintTicketButton />
         <QuoteContainer>
           <Subtitle />
           <Intro />
