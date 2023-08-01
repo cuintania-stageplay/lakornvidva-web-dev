@@ -18,6 +18,7 @@ const Button = styled.button`
     #6c2469 84.92%
   );
 
+  color: white;
   font-family: ${chopsin.style.fontFamily};
   font-size: max(15px, 1.5vw);
 
