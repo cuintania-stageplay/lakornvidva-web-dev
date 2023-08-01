@@ -13,6 +13,12 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
+const PrintComponent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
 const NameInput = styled.input`
   position: absolute;
   margin-top: max(100px, 22.5vh);
@@ -42,6 +48,7 @@ const InputForPrint = styled.pre`
   text-align: center;
 
   color: white;
+  background: none;
 `;
 
 export default function Ticket(props: {
@@ -54,9 +61,11 @@ export default function Ticket(props: {
   };
 
   return (
-    <Wrapper ref={props.printRef}>
-      <img src={TicketCard.src} alt='Your Ticket' />
-      <InputForPrint>{props.inputValue}</InputForPrint>
+    <Wrapper>
+      <PrintComponent ref={props.printRef}>
+        <img src={TicketCard.src} alt='Your Ticket' />
+        <InputForPrint>{props.inputValue}</InputForPrint>
+      </PrintComponent>
       <NameInput
         type='text'
         value={props.inputValue}
