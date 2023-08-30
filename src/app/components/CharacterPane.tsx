@@ -54,31 +54,6 @@ const CharQuote = styled.div`
   padding-bottom: 3vw;
 `;
 
-const SectionLineBox = styled.div`
-  width: 85vw;
-
-  margin-top: max(15px, 3vw);
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-
-  @media screen and (max-width: 480px) {
-    width: 100vw;
-  }
-`;
-
-const SectionLineRed = styled.div`
-  width: 39vw;
-  height: 2.3px;
-  background: linear-gradient(90deg, rgb(0, 0, 0, 0), #e93224);
-`;
-
-const SectionLineGreen = styled(SectionLineRed)`
-  background: linear-gradient(90deg, #00e225, rgb(0, 0, 0, 0));
-`;
-
 export default function CharacterPane() {
   return (
     <PaneStyle>
@@ -86,10 +61,6 @@ export default function CharacterPane() {
       <CharQuote>เราเชื่อว่านี่คือพื้นที่แห่ง “ความฝัน และ ความหวัง”</CharQuote>
       <CharacterListPC />
       <CharacterListMobile />
-      <SectionLineBox>
-        <SectionLineRed />
-        <SectionLineGreen />
-      </SectionLineBox>
     </PaneStyle>
   );
 }
