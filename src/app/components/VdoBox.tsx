@@ -4,6 +4,7 @@ import Subtitle from './Subtitle';
 import TeaserVDO from './Teaser';
 import BuyButton from './BuyButton';
 import PrintTicketButton from './PrintTicketButton';
+import DownloadAgendaButton from './DownloadAgendaButton';
 
 const TextBox = styled.div`
   width: 45vw;
@@ -56,6 +57,28 @@ const QuoteContainer = styled.div`
   margin-top: 10vw;
 `;
 
+const ButtonBox = styled.div`
+  width: 43.5vw;
+  height: max(70px, 10vw);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  @media screen and (max-width: 600px) {
+    height: 75px;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 80px;
+  }
+`;
+
 export default function VdoBox() {
   return (
     <>
@@ -66,14 +89,20 @@ export default function VdoBox() {
           <TextBox>
             <Subtitle />
             <Intro />
-            <PrintTicketButton />
+            <ButtonBox>
+              <PrintTicketButton />
+              <DownloadAgendaButton />
+            </ButtonBox>
           </TextBox>
         </InsidePCBox>
       </PCBox>
       <MobileBox>
         <TeaserVDO />
         <BuyButton />
-        <PrintTicketButton />
+        <ButtonBox>
+          <PrintTicketButton />
+          <DownloadAgendaButton />
+        </ButtonBox>
         <QuoteContainer>
           <Subtitle />
           <Intro />
