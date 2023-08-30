@@ -3,6 +3,8 @@ import { styled } from 'styled-components';
 import { sukhumvit_medium } from '../fonts';
 import CommentBox from './CommentBox';
 
+import { comment } from '../text/Text';
+
 const Header = styled.div`
   width: 90vw;
 
@@ -70,7 +72,7 @@ export default function CommentPane() {
     <>
       <Header>
         <LineGreenFront />
-        <TextBox>47 COMMENTS</TextBox>
+        <TextBox>{comment.length} COMMENTS</TextBox>
         <LineGreenBack />
       </Header>
       <CommentList>
