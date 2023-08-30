@@ -48,3 +48,14 @@ export const intro =
   'มาร่วมค้นหา "หน้าตาความสำเร็จ" ของคุณ\n' +
   'ผ่านเรื่องราวของหนทางไปสู่ประตูนิรันดร์\n' +
   'ประตูแห่งความสำเร็จในชีวิต';
+
+export const comment: [number, string][] = [
+  [
+    2.5,
+    'Comment01 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a neque',
+  ],
+  [
+    4,
+    'Comment02 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a nequeut nibh mattis porta',
+  ],
+];

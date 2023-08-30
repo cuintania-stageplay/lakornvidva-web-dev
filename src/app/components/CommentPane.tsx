@@ -74,9 +74,8 @@ export default function CommentPane() {
         <LineGreenBack />
       </Header>
       <CommentList>
-        <CommentBox />
-        <CommentBox />
-        <CommentBox />
+        <CommentBox index={0} />
+        <CommentBox index={1} />
       </CommentList>
       <Footer>
         <MoreComment>More Comments</MoreComment>

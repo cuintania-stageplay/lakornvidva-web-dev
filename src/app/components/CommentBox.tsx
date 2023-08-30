@@ -5,6 +5,7 @@ import { sukhumvit_medium, sukhumvit_text } from '../fonts';
 import AnonymousPic from '../images/util/Anonymous.png';
 
 import RatingStar from './RatingStar';
+import { comment } from '../text/Text';
 
 const Box = styled.div`
   width: 85vw;
@@ -78,7 +79,7 @@ const LowerBox = styled.div`
   justify-content: flex-end;
 `;
 
-export default function CommentBox() {
+export default function CommentBox(prop: { index: number }) {
   return (
     <Box>
       <UpperBox>
@@ -92,17 +93,11 @@ export default function CommentBox() {
         </Wrapper>
         <TextBox>
           <Name>ANONYMOUS</Name>
-          <Comment>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a neque
-            ut nibh mattis porta. Duis nisi nisi, malesuada nec gravida vel,
-            convallis ac enim. Sed congue viverra bibendum. Pellentesque
-            habitant morbi tristique senectus et netus et malesuada fames ac
-            turpis egestas. Suspendisse pharetra diam nec luctus porttitor.
-          </Comment>
+          <Comment>{comment[prop.index][1]}</Comment>
         </TextBox>
       </UpperBox>
       <LowerBox>
-        <RatingStar />
+        <RatingStar star={comment[prop.index][0]} />
       </LowerBox>
     </Box>
   );
