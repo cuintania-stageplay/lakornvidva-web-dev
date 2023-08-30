@@ -4,6 +4,7 @@ import { sukhumvit_medium } from '../fonts';
 import CommentBox from './CommentBox';
 
 import { comment } from '../text/Text';
+import { useState } from 'react';
 
 const Header = styled.div`
   width: 90vw;
@@ -68,6 +69,14 @@ const Footer = styled.div`
 `;
 
 export default function CommentPane() {
+  const [isMoreComment, setIsMoreComment] = useState(true);
+
+  let commentList = [];
+
+  for (let i = 0; i < comment.length; i++) {
+    commentList.push(<CommentBox index={i} />);
+  }
+
   return (
     <>
       <Header>
@@ -76,11 +85,16 @@ export default function CommentPane() {
         <LineGreenBack />
       </Header>
       <CommentList>
-        <CommentBox index={0} />
-        <CommentBox index={1} />
+        {isMoreComment ? commentList.slice(0, 3) : commentList}
       </CommentList>
       <Footer>
-        <MoreComment>More Comments</MoreComment>
+        <MoreComment
+          onClick={() => {
+            setIsMoreComment(!isMoreComment);
+          }}
+        >
+          {isMoreComment ? 'More Comments' : 'Less Comments'}
+        </MoreComment>
       </Footer>
     </>
   );
