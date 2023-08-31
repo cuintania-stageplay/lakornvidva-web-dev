@@ -97,7 +97,7 @@ export default function CommentBox(prop: { index: number }) {
         </TextBox>
       </UpperBox>
       <LowerBox>
-        <RatingStar star={comment[prop.index][0]} />
+        <RatingStar star={comment[prop.index][0]} index={prop.index} />
       </LowerBox>
     </Box>
   );

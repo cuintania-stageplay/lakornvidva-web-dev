@@ -74,7 +74,7 @@ export default function CommentPane() {
   let commentList = [];
 
   for (let i = 0; i < comment.length; i++) {
-    commentList.push(<CommentBox index={i} />);
+    commentList.push(<CommentBox index={i} key={i}/>);
   }
 
   return (

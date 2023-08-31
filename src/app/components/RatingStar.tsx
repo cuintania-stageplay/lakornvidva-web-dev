@@ -34,33 +34,31 @@ const RatingBox = styled.div`
   justify-content: center;
 `;
 
-export default function RatingStar(prop: { star: number }) {
+export default function RatingStar(props: { star: number; index: number }) {
   let i = 0;
   const ratingStar = [];
 
-  for (i; i < Math.floor(prop.star); i++) {
+  for (i; i < Math.floor(props.star); i++) {
     ratingStar.push(
-      <Wrapper>
+      <Wrapper key={String(props.index) + '_' + i.toString()}>
         <Image
           width={Fullstar.width}
           height={Fullstar.height}
           src={Fullstar.src}
           alt='1'
-          key={i}
         />
       </Wrapper>
     );
   }
 
-  if (!Number.isInteger(prop.star)) {
+  if (!Number.isInteger(props.star)) {
     ratingStar.push(
-      <Wrapper>
+      <Wrapper key={String(props.index) + '_' + i.toString()}>
         <Image
           width={Halfstar.width}
           height={Halfstar.height}
           src={Halfstar.src}
           alt='0.5'
-          key={i}
         />
       </Wrapper>
     );
@@ -70,13 +68,13 @@ export default function RatingStar(prop: { star: number }) {
 
   for (i; i < 5; i++) {
     ratingStar.push(
-      <Wrapper>
+      <Wrapper key={String(props.index) + '_' + i.toString()}>
         <Image
           width={Emptystar.width}
           height={Emptystar.height}
           src={Emptystar.src}
           alt='0'
-          key={i}
+          key={String(props.index) + '_' + i.toString()}
         />
       </Wrapper>
     );
