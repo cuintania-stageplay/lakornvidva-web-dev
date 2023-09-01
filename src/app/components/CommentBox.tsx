@@ -64,11 +64,14 @@ const Name = styled.div`
   text-align: left;
 `;
 
-const Comment = styled.div`
+const Comment = styled.pre`
   font-family: ${sukhumvit_text.style.fontFamily};
-  font-size: max(1.75vw, 10.5px);
+  font-size: max(1.5vw, 11px);
   font-weight: 400;
   text-align: left;
+
+  margin: 1.5vw;
+  text-wrap: balance;
 `;
 
 const LowerBox = styled.div`
