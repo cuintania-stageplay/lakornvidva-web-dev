@@ -14,6 +14,8 @@ const Wrapper = styled.div`
 
   background: radial-gradient(rgba(22, 36, 32, 1) 0%, rgba(22, 36, 32, 0) 40%);
 
+  filter: brightness(150%) saturate(115%);
+
   display: flex;
   flex-direction: row;
   align-items: center;
