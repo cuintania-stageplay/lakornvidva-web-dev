@@ -23,7 +23,7 @@ const Wrapper = styled.div`
 `;
 
 const RatingBox = styled.div`
-  width: 15vw;
+  width: 18vw;
 
   background: radial-gradient(
     rgba(0, 255, 209, 0.15) 5%,
