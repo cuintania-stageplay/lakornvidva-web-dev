@@ -48,7 +48,7 @@ export default function DownloadAgendaButton() {
     <Button
       onClick={() =>
         window.open(
-          'https://drive.google.com/file/d/1OPcU_80RUkyu4Po1BWi-w0z8ADmbgPK2/view',
+          'https://drive.google.com/file/d/1jPLm7SrXw9w-l2N8wlj6eeCxlmFz1nXJ/view?usp=sharing',
           '_blank'
         )
       }
